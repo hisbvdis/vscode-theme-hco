@@ -1,0 +1,172 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "type": "light",
+  "name": "hco",
+  "colors": {
+    "activityBarBadge.background": "#007acc",
+    "editor.background": "#ffffff",
+    "editor.foreground": "#000000",
+    "editor.inactiveSelectionBackground": "#e5ebf1",
+    "editor.lineHighlightBorder": "#00000000",
+    "editor.rangeHighlightBackground": "#00000000",
+    "editor.selectionHighlightBackground": "#add6ff80",
+    "editorGroupHeader.tabsBackground": "#d4d4d4",
+    "editorIndentGuide.activeBackground": "#b3b3b3",
+    "editorIndentGuide.background": "#dedede",
+    "editorSuggestWidget.background": "#f3f3f3",
+    "input.placeholderForeground": "#767676",
+    "list.focusHighlightForeground": "#9dddff",
+    "list.hoverBackground": "#e8e8e8",
+    "notebook.cellBorderColor": "#e8e8e8",
+    "notebook.selectedCellBackground": "#c8ddf150",
+    "ports.iconRunningProcessForeground": "#369432",
+    "searchEditor.textInputBorder": "#cecece",
+    "settings.numberInputBorder": "#cecece",
+    "settings.textInputBorder": "#cecece",
+    "sideBar.border": "#dbdbdc",
+    "sideBarSectionHeader.background": "#00000000",
+    "sideBarSectionHeader.border": "#61616130",
+    "sideBarTitle.foreground": "#6f6f6f",
+    "statusBarItem.errorBackground": "#c72e0f",
+    "statusBarItem.remoteBackground": "#16825d",
+    "statusBarItem.remoteForeground": "#ffffff",
+    "tab.activeBackground": "#ffffff",
+    "tab.border": "#cccccc",
+    "tab.inactiveBackground": "#e3e3e3",
+    "tab.lastPinnedBorder": "#61616130",
+    "list.activeSelectionIconForeground": "#ffffff",
+  },
+  "tokenColors": [{
+      "scope": [
+        "support.type.property-name.json",
+        "markup.bold markup.inline.raw",
+        "meta.object-literal.key constant",
+        "meta.type.annotation meta.definition.property",
+        // "meta.object-literal.key string",
+        // "meta.object-literal.key constant.numeric",
+        // "meta.object-literal.key entity.name.function",
+
+        "meta.embedded",
+
+        "constant.other.character-class.regexp",
+        "string.regexp punctuation.definition.string.begin.js",
+        "string.regexp punctuation.definition.string.end.js",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    {
+      "scope": [
+        "storage",
+        "keyword",
+        "constant.language",
+        "meta.return.type",
+        "meta.type.annotation",
+        "variable.language",
+
+        "punctuation.definition.template-expression.begin",
+        "punctuation.definition.template-expression.end",
+      ],
+      "settings": {
+        "foreground": "#2a00ff"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.function",
+        "support.function",
+      ],
+      "settings": {
+        "foreground": "#00ace6"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.tag",
+        "constant.character",
+
+        "punctuation.definition.character-class.regexp",
+        "punctuation.definition.group.regexp",
+        "meta.assertion",
+      ],
+      "settings": {
+        "foreground": "#db0000"
+      }
+    },
+    {
+      "scope": [
+        "entity.other.attribute-name",
+      ],
+      "settings": {
+        "foreground": "#cc9900",
+      }
+    },
+    {
+      "scope": [
+        "constant.numeric",
+        "constant keyword.other.unit",
+      ],
+      "settings": {
+        "foreground": "#AF00DB"
+      }
+    },
+    {
+      "scope": [
+        "string",
+        "markup.inline.raw",
+      ],
+      "settings": {
+        "foreground": "#009900"
+      }
+    },
+    {
+      "scope": [
+        "markup.heading",
+        "markup.heading string",
+        "markup.heading markup.inline.raw",
+      ],
+      "settings": {
+        "foreground": "#a21319"
+      }
+    },
+        {
+      "scope": [
+        "comment",
+      ],
+      "settings": {
+        "foreground": "#969896"
+      }
+    },
+    {
+      "scope": [
+        "markup.heading",
+        "markup.bold",
+      ],
+      "settings": {
+        "fontStyle": "bold",
+      }
+    },
+    {
+      "scope": [
+        "markup.italic",
+      ],
+      "settings": {
+        "fontStyle": "italic",
+      }
+    },
+    {
+      "scope": [
+        "markup.bold.markdown markup.italic.markdown",
+        "markup.italic.markdown markup.bold.markdown",
+      ],
+      "settings": {
+        "fontStyle": "italic bold",
+      }
+    },
+  ],
+  "semanticHighlighting": false,
+  "semanticTokenColors": {
+    
+  }
+}
