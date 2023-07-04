@@ -6,7 +6,6 @@
 *.pdf
 *.psd
 *.sublime*
-*.vsix
 
 node_modules/
 npm-debug.log*
