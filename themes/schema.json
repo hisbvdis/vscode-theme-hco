@@ -1,7 +1,7 @@
 {
   "$schema": "vscode://schemas/color-theme",
   "type": "light",
-  "name": "Color5",
+  "name": "HCO",
   "colors": {
     "activityBarBadge.background": "#007acc",
     "editor.background": "#ffffff",
@@ -64,9 +64,10 @@
         "variable.language",
         "constant.language",
         "keyword",
+        "keyword.operator.new",
       ],
       "settings": {
-        "foreground": "#9726ed"
+        "foreground": "#ab26ed"
       }
     },
     {
@@ -75,16 +76,20 @@
         "constant keyword.other.unit",
       ],
       "settings": {
-        "foreground": "#0041c2"
+        "foreground": "#233fc7"
       }
     },
     {
       "scope": [
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
+
+        "storage.type.function.arrow",
+        "keyword.operator",
       ],
       "settings": {
-        "foreground": "#2a00ff"
+        // "foreground": "#B700DB"
+        "foreground": "#2A00FF"
       }
     },
     {
@@ -106,7 +111,7 @@
         "meta.assertion",
       ],
       "settings": {
-        "foreground": "#e61300"
+        "foreground": "#DB0000"
       },
     },
     {
