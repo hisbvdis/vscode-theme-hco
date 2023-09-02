@@ -5,7 +5,7 @@
   "colors": {
     "activityBarBadge.background": "#007acc",
     "editor.background": "#fafafa",
-    "editor.foreground": "#2f3337",
+    "editor.foreground": "#23272f",
     "editor.inactiveSelectionBackground": "#e5ebf1",
     "editor.rangeHighlightBackground": "#00000000",
     "editor.selectionHighlightBackground": "#add6ff80",
@@ -63,7 +63,7 @@
         "meta.embedded",
       ],
       "settings": {
-        "foreground": "#2f3337"
+        "foreground": "#23272f"
       }
     },
     {
@@ -83,12 +83,13 @@
         "constant.language",
       ],
       "settings": {
-        "foreground": "#AF00DB"
+        "foreground": "#a700d1"
       }
     },
     {
       "scope": [
         "entity.name.function",
+        "support.function",
       ],
       "settings": {
         "foreground": "#00ACE6"
@@ -99,7 +100,7 @@
         "entity.name.tag",
       ],
       "settings": {
-        "foreground": "#d10505"
+        "foreground": "#d60024"
       }
     },
     {
@@ -107,12 +108,14 @@
         "entity.other.attribute-name",
       ],
       "settings": {
-        "foreground": "#ff8f8f"
+        "foreground": "#ff8e80"
       }
     },
     {
       "scope": [
         "string",
+
+        "markup.inline.raw",
       ],
       "settings": {
         "foreground": "#009900"
@@ -167,7 +170,7 @@
     },
     {
       "scope": [
-        
+
       ],
       "settings": {
         "fontStyle": "italic bold",
