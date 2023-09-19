@@ -98,6 +98,7 @@
     {
       "scope": [
         "entity.name.tag",
+        "constant.character",
       ],
       "settings": {
         "foreground": "#d60024"
@@ -132,6 +133,7 @@
     {
       "scope": [
         "markup.heading",
+        "markup.heading markup.inline.raw",
       ],
       "settings": {
         "foreground": "#a21319"
