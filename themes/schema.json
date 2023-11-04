@@ -66,8 +66,6 @@
         "constant.other.character-class.regexp",
         "string.regexp punctuation.definition.string.begin",
         "string.regexp punctuation.definition.string.end",
-        "punctuation.definition.character-class.regexp",
-        "punctuation.definition.group.regexp",
       ],
       "settings": {
         "foreground": "#23272f"
@@ -106,6 +104,9 @@
       "scope": [
         "entity.name.tag",
         "constant.character",
+
+        "punctuation.definition.character-class.regexp",
+        "punctuation.definition.group.regexp",
       ],
       "settings": {
         "foreground": "#d60024"
