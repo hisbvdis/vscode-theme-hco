@@ -1,7 +1,7 @@
 {
   "$schema": "vscode://schemas/color-theme",
   "type": "light",
-  "name": "Color5",
+  "name": "HCO",
   "colors": {
     "activityBarBadge.background": "#007acc",
     "editor.background": "#fafafa",
@@ -73,8 +73,9 @@
     },
     {
       "scope": [
-        "keyword.control",
-        "keyword.operator",
+        // "keyword.control",
+        // "keyword.operator",
+        "keyword",
 
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
