@@ -133,7 +133,8 @@
     },
     {
       "scope": [
-        "constant.numeric"
+        "constant.numeric",
+        "keyword.other.unit",
       ],
       "settings": {
         "foreground": "#CC9900"
