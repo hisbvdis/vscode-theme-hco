@@ -5,7 +5,7 @@
   "colors": {
     "activityBarBadge.background": "#007acc",
     "editor.background": "#fafafa",
-    "editor.foreground": "#23262f",
+    "editor.foreground": "#2b2f3b",
     "editor.inactiveSelectionBackground": "#e5ebf1",
     "editor.rangeHighlightBackground": "#00000000",
     "editor.selectionHighlightBackground": "#add6ff80",
@@ -26,12 +26,12 @@
     "sideBarTitle.foreground": "#6f6f6f",
     "statusBarItem.errorBackground": "#c72e0f",
     "statusBarItem.remoteBackground": "#16825d",
-    "statusBarItem.remoteForeground": "#ffffff",
-    "tab.activeBackground": "#ffffff",
+    "statusBarItem.remoteForeground": "#fafafa",
+    "tab.activeBackground": "#fafafa",
     "tab.border": "#cccccc",
     "tab.inactiveBackground": "#e3e3e3",
     "tab.lastPinnedBorder": "#61616130",
-    "list.activeSelectionIconForeground": "#ffffff",
+    "list.activeSelectionIconForeground": "#fafafa",
     "terminal.ansiGreen": "#009900",
     "terminal.ansiYellow": "#cc9900",
     "editor.lineHighlightBorder": "#00000000",
@@ -57,7 +57,7 @@
         "string.regexp punctuation.definition.string.end",
       ],
       "settings": {
-        "foreground": "#23262f"
+        "foreground": "#2b2f3b"
       }
     },
     {
@@ -79,7 +79,7 @@
         "punctuation.definition.template-expression.end",
       ],
       "settings": {
-        "foreground": "#1200db"
+        "foreground": "#1300e6"
       }
     },
     {
@@ -96,7 +96,7 @@
         "support.function",
       ],
       "settings": {
-        "foreground": "#00ACE6"
+        "foreground": "#00b0e6"
       }
     },
     {
@@ -162,7 +162,7 @@
         "meta.type.annotation meta.brace.square",
       ],
       "settings": {
-        "foreground": "#969896",
+        // "foreground": "#CC9900",
         "fontStyle": "italic",
       }
     },
@@ -190,7 +190,7 @@
     },
     {
       "scope": [
-        "meta.type.annotation punctuation.definition.block",
+        // "meta.type.annotation punctuation.definition.block",
       ],
       "settings": {
         "fontStyle": "italic bold",
