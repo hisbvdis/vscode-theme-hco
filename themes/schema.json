@@ -157,13 +157,12 @@
     },
     {
       "scope": [
-        "support.type.primitive",
-        "entity.name.type",
-        "meta.type.annotation meta.brace.square",
+        "meta.type.annotation",
+        "meta.return.type",
       ],
       "settings": {
-        // "foreground": "#CC9900",
-        "fontStyle": "italic",
+        "foreground": "#78909C",
+        // "fontStyle": "italic",
       }
     },
     {
@@ -190,7 +189,6 @@
     },
     {
       "scope": [
-        // "meta.type.annotation punctuation.definition.block",
       ],
       "settings": {
         "fontStyle": "italic bold",
