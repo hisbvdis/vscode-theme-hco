@@ -79,7 +79,7 @@
         "punctuation.definition.template-expression.end",
       ],
       "settings": {
-        "foreground": "#1300e6"
+        "foreground": "#1200db"
       }
     },
     {
