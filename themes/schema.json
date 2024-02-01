@@ -50,6 +50,7 @@
       "scope": [
         "support.type.property-name.json",
         "meta.embedded",
+        "meta.block",
 
         "string.regexp keyword.other",
         "constant.other.character-class.regexp",
@@ -157,12 +158,11 @@
     },
     {
       "scope": [
-        "meta.type.annotation",
-        "meta.return.type",
+        "entity.name.type",
+        "support.type",
       ],
       "settings": {
         "foreground": "#78909C",
-        // "fontStyle": "italic",
       }
     },
     {
