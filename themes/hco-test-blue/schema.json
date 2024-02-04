@@ -70,7 +70,8 @@
         "markup.bold",
       ],
       "settings": {
-        "foreground": "#000000"
+        // "foreground": "#1200db"
+        "foreground": "#2800f0"
       }
     },
     {
@@ -81,7 +82,15 @@
         "punctuation.definition.template-expression.end",
       ],
       "settings": {
-        "foreground": "#1200db"
+        // "foreground": "#1200db"
+      }
+    },
+    {
+      "scope": [
+        "keyword.operator",
+      ],
+      "settings": {
+        "foreground": "#0080ff"
       }
     },
     {
@@ -169,7 +178,7 @@
     },
     {
       "scope": [
-        "storage",
+        // "storage",
         "entity.name.tag",
         "keyword.operator.new",
 
