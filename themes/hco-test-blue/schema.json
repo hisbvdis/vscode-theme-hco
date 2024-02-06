@@ -95,7 +95,7 @@
     },
     {
       "scope": [
-        // "constant.language",
+        "constant.language",
         "storage",
         "keyword.operator.new",
       ],
