@@ -64,7 +64,6 @@
     },
     {
       "scope": [
-        "storage",
         "keyword.operator.new",
 
         "markup.bold",
@@ -75,19 +74,31 @@
     },
     {
       "scope": [
+        "storage",
         "keyword",
 
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
       ],
       "settings": {
-        "foreground": "#1200db"
+        // "foreground": "#1200db"
+        // "foreground": "#2a00ff"
+        // "foreground": "#1300e0"
+        // "foreground": "#e00025"
+        "foreground": "#db0049"
       }
     },
     {
       "scope": [
-        "entity.name.function",
-        "support.function",
+        "constant.language",
+      ],
+      "settings": {
+        "foreground": "#a700d1"
+      }
+    },
+    {
+      "scope": [
+
       ],
       "settings": {
         "foreground": "#00b0e6"
@@ -97,7 +108,6 @@
       "scope": [
         "entity.name.tag",
         "constant.character",
-        "support.class.component",
 
         "punctuation.definition.character-class.regexp",
         "punctuation.definition.group.regexp",
@@ -108,6 +118,9 @@
     },
     {
       "scope": [
+        "entity.name.function",
+        "support.function",
+
         "entity.other.attribute-name",
       ],
       "settings": {
@@ -128,7 +141,6 @@
       "scope": [
         "constant.numeric",
         "keyword.other.unit",
-        "constant.language",
       ],
       "settings": {
         "foreground": "#CC9900"
@@ -157,7 +169,6 @@
         // "meta.type.annotation",
         // "meta.return.type",
         "support.type",
-        "support.class",
       ],
       "settings": {
         // "foreground": "#78909C",
@@ -166,9 +177,10 @@
     },
     {
       "scope": [
-        "storage",
+        // "storage",
         "entity.name.tag",
         "keyword.operator.new",
+        // "entity.name.type.interface",
 
         "markup.bold",
         "markup.heading",
@@ -202,6 +214,6 @@
       }
     }
   ],
-  "semanticHighlighting": false,
+  "semanticHighlighting": true,
   "semanticTokenColors": {},
 }
