@@ -3,7 +3,7 @@
 	"displayName": "HCO",
 	"description": "VS Code editor theme",
 	"publisher": "hisbvdis",
-	"version": "0.0.29",
+	"version": "0.0.30",
 	"homepage": "https://github.com/hisbvdis/hco",
 	"repository": {
 		"type": "git",
@@ -23,20 +23,20 @@
 				"uiTheme": "vs",
 				"path": "./themes/schema.json"
 			},
-      {
-				"label": "HCOB (blue-test)",
+			{
+				"label": "HCOB (blue)",
 				"uiTheme": "vs",
-				"path": "./themes/hco-test-blue/schema.json"
+				"path": "./themes/hco-blue/schema.json"
 			},
 			{
-				"label": "HCOR (red-test)",
+				"label": "HCOR (red)",
 				"uiTheme": "vs",
-				"path": "./themes/hco-test-red/schema.json"
+				"path": "./themes/hco-red/schema.json"
 			},
 			{
-				"label": "HCOD (dark-test)",
+				"label": "HCOD (dark)",
 				"uiTheme": "vs-dark",
-				"path": "./themes/hco-test-dark/schema.json"
+				"path": "./themes/hco-dark/schema.json"
 			}
 		]
 	},
@@ -44,7 +44,7 @@
 		"id": "522ea58a-3c2b-4da3-b0d6-411127e26605",
 		"publisherId": "a410cbcf-f0d3-46da-9bc1-db019d82227a",
 		"publisherDisplayName": "hisbvdis",
-		"installedTimestamp": 1706969738547,
+		"installedTimestamp": 1707242351857,
 		"targetPlatform": "undefined",
 		"isApplicationScoped": false,
 		"updated": true,
