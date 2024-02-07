@@ -128,7 +128,6 @@
       "scope": [
         "constant.numeric",
         "keyword.other.unit",
-        "constant.language",
       ],
       "settings": {
         "foreground": "#CC9900"
@@ -153,15 +152,19 @@
     },
     {
       "scope": [
-        // "entity.name.type",
-        // "meta.type.annotation",
-        // "meta.return.type",
+        "constant.language",
+      ],
+      "settings": {
+        "foreground": "#AF00DB"
+      }
+    },
+    {
+      "scope": [
         "support.type",
         "support.class",
       ],
       "settings": {
-        // "foreground": "#78909C",
-        "foreground": "#a700d1"
+        // "foreground": "#bc98cd"
       }
     },
     {

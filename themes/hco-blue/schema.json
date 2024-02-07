@@ -64,8 +64,6 @@
     },
     {
       "scope": [
-        "keyword.operator.new",
-
         "markup.bold",
       ],
       "settings": {
@@ -76,6 +74,7 @@
       "scope": [
         "storage",
         "keyword",
+        // "keyword.operator.new",
 
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
@@ -159,22 +158,15 @@
     },
     {
       "scope": [
-        // "entity.name.type",
-        // "meta.type.annotation",
-        // "meta.return.type",
         "support.type",
       ],
       "settings": {
-        // "foreground": "#78909C",
-        "foreground": "#a700d1"
+        // "foreground": "#bc98cd"
       }
     },
     {
       "scope": [
-        // "storage",
         "entity.name.tag",
-        "keyword.operator.new",
-        // "entity.name.type.interface",
 
         "markup.bold",
         "markup.heading",
@@ -208,6 +200,6 @@
       }
     }
   ],
-  "semanticHighlighting": true,
+  "semanticHighlighting": false,
   "semanticTokenColors": {},
 }
