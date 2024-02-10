@@ -23,7 +23,7 @@
         "punctuation.definition.template-expression.end",
       ],
       "settings": {
-        "foreground": "#578cd6",
+        "foreground": "#569CD6",
       }
     },
     {
