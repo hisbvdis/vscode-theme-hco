@@ -70,8 +70,7 @@
         "markup.bold",
       ],
       "settings": {
-        // "foreground": "#000000"
-        "foreground": "#000099"
+        "foreground": "#000000"
       }
     },
     {
@@ -96,12 +95,10 @@
     },
     {
       "scope": [
-        // "constant.language",
-        "keyword.control",
+        "constant.language",
       ],
       "settings": {
-        // "foreground": "#AF00DB"
-        "foreground": "#A626A4"
+        "foreground": "#AF00DB"
       }
     },
     {
@@ -114,7 +111,7 @@
         "punctuation.definition.group.regexp",
       ],
       "settings": {
-        "foreground": "#d60024"
+        "foreground": "#D60024"
       }
     },
     {

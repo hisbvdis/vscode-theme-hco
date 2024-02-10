@@ -84,12 +84,19 @@
     },
     {
       "scope": [
-        "storage",
-        "keyword.operator",
         "constant.language",
       ],
       "settings": {
-        "foreground": "#A626A4"
+        "foreground": "#AF00DB"
+      }
+    },
+    {
+      "scope": [
+        "storage",
+        "keyword.operator",
+      ],
+      "settings": {
+        "foreground": "#9126b5"
       }
     },
     {
@@ -102,7 +109,7 @@
         "punctuation.definition.group.regexp",
       ],
       "settings": {
-        "foreground": "#d62400"
+        "foreground": "#D60024"
       }
     },
     {

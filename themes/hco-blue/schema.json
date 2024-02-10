@@ -88,11 +88,19 @@
     },
     {
       "scope": [
+        // "keyword.control",
+      ],
+      "settings": {
+        "foreground": "#A626A4"
+      }
+    },
+    {
+      "scope": [
         "entity.name.tag",
         "entity.name.tag support.class.component",
       ],
       "settings": {
-        "foreground": "#d60024"
+        "foreground": "#D60024"
       }
     },
     {
