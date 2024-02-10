@@ -50,6 +50,7 @@
       "scope": [
         "support.type.property-name.json",
         "meta.embedded",
+        "keyword.control",
       ],
       "settings": {
         "foreground": "#000000"
@@ -59,15 +60,13 @@
       "scope": [
         "storage",
         "keyword",
-        "constant.language",
 
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
       ],
       "settings": {
         // "foreground": "#1200db"
-        // "foreground": "#0000db"
-        "foreground": "#0000e6"
+        "foreground": "#0000d6"
       }
     },
     {
@@ -81,11 +80,10 @@
     },
     {
       "scope": [
-        "keyword.control",
+        "constant.language",
       ],
       "settings": {
-        // "foreground": "#9C00B0"
-        "foreground": "#a100d6"
+        "foreground": "#AF00DB"
       }
     },
     {
@@ -96,7 +94,7 @@
       "settings": {
         // "foreground": "#d60024"
         // "foreground": "#d60000"
-        "foreground": "#d62400"
+        "foreground": "#d60000"
       }
     },
     {

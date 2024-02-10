@@ -97,8 +97,7 @@
         "constant.language",
       ],
       "settings": {
-        "foreground": "#a10ac7" /* My */
-        // "foreground": "#9C00B0" /* Material */
+        "foreground": "#A626A4"
       }
     },
     {
