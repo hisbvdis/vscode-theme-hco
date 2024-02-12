@@ -162,9 +162,10 @@
       "scope": [
         "support.type",
         "support.class",
+        "meta.type.annotation entity.name.type",
       ],
       "settings": {
-        // "foreground": "#bc98cd"
+        "foreground": "#78909C"
       }
     },
     {

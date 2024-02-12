@@ -70,7 +70,7 @@
         "punctuation.definition.template-expression.end",
       ],
       "settings": {
-        "foreground": "#1300e0"
+        "foreground": "#1200db"
       }
     },
     {
@@ -84,19 +84,12 @@
     },
     {
       "scope": [
+        "storage",
+        "keyword.operator",
         "constant.language",
       ],
       "settings": {
-        "foreground": "#AF00DB"
-      }
-    },
-    {
-      "scope": [
-        "storage",
-        "keyword.operator",
-      ],
-      "settings": {
-        "foreground": "#9126b5"
+        "foreground": "#a411d4"
       }
     },
     {
@@ -117,7 +110,8 @@
         "entity.other.attribute-name",
       ],
       "settings": {
-        "foreground": "#ff8e80"
+        // "foreground": "#ff8e80"
+        "foreground": "#ff9580"
       }
     },
     {
@@ -188,6 +182,7 @@
     },
     {
       "scope": [
+
       ],
       "settings": {
         "fontStyle": "italic bold",

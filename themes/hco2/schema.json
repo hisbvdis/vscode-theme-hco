@@ -5,7 +5,7 @@
   "colors": {
     "activityBarBadge.background": "#007acc",
     "editor.background": "#fafafa",
-    "editor.foreground": "#212121",
+    "editor.foreground": "#444444",
     "editor.inactiveSelectionBackground": "#e5ebf1",
     "editor.rangeHighlightBackground": "#00000000",
     "editor.selectionHighlightBackground": "#add6ff80",
@@ -59,7 +59,7 @@
         "string.regexp punctuation.definition.string.end",
       ],
       "settings": {
-        "foreground": "#212121"
+        "foreground": "#444444"
       }
     },
     {
@@ -95,14 +95,6 @@
     },
     {
       "scope": [
-        "constant.language",
-      ],
-      "settings": {
-        "foreground": "#AF00DB"
-      }
-    },
-    {
-      "scope": [
         "entity.name.tag",
         "constant.character",
         "support.class.component",
@@ -111,7 +103,7 @@
         "punctuation.definition.group.regexp",
       ],
       "settings": {
-        "foreground": "#D60024"
+        "foreground": "#d60024"
       }
     },
     {
@@ -156,6 +148,15 @@
       ],
       "settings": {
         "foreground": "#969896"
+      }
+    },
+    {
+      "scope": [
+        // "constant.language",
+        "keyword.control",
+      ],
+      "settings": {
+        "foreground": "#AF00DB"
       }
     },
     {
