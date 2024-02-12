@@ -5,7 +5,7 @@
   "colors": {
     "activityBarBadge.background": "#007acc",
     "editor.background": "#fafafa",
-    "editor.foreground": "#212121",
+    "editor.foreground": "#262626",
     "editor.inactiveSelectionBackground": "#e5ebf1",
     "editor.rangeHighlightBackground": "#00000000",
     "editor.selectionHighlightBackground": "#add6ff80",
@@ -59,7 +59,7 @@
         "string.regexp punctuation.definition.string.end",
       ],
       "settings": {
-        "foreground": "#212121"
+        "foreground": "#262626"
       }
     },
     {

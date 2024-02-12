@@ -5,7 +5,7 @@
   "colors": {
     "activityBarBadge.background": "#007acc",
     "editor.background": "#fafafa",
-    "editor.foreground": "#444444",
+    "editor.foreground": "#262626",
     "editor.inactiveSelectionBackground": "#e5ebf1",
     "editor.rangeHighlightBackground": "#00000000",
     "editor.selectionHighlightBackground": "#add6ff80",
@@ -59,6 +59,16 @@
         "string.regexp punctuation.definition.string.end",
       ],
       "settings": {
+        "foreground": "#262626"
+      }
+    },
+    {
+      "scope": [
+        "keyword.control",
+
+        "markup.bold",
+      ],
+      "settings": {
         "foreground": "#444444"
       }
     },
@@ -66,15 +76,6 @@
       "scope": [
         "storage",
         "keyword.operator.new",
-
-        "markup.bold",
-      ],
-      "settings": {
-        "foreground": "#000000"
-      }
-    },
-    {
-      "scope": [
         "keyword",
 
         "punctuation.definition.template-expression.begin",
@@ -152,8 +153,7 @@
     },
     {
       "scope": [
-        // "constant.language",
-        "keyword.control",
+        "constant.language",
       ],
       "settings": {
         "foreground": "#AF00DB"
@@ -171,8 +171,6 @@
     },
     {
       "scope": [
-        "storage",
-        "keyword.operator.new",
 
         "entity.name.tag",
 
@@ -185,7 +183,7 @@
     },
     {
       "scope": [
-        "keyword.control",
+
         "markup.italic",
       ],
       "settings": {
@@ -194,6 +192,7 @@
     },
     {
       "scope": [
+        "keyword.control",
       ],
       "settings": {
         "fontStyle": "italic bold",
