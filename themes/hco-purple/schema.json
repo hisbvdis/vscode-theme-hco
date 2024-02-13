@@ -152,7 +152,7 @@
     },
     {
       "scope": [
-        "support.type",
+        "support.type.primitive",
         "support.class",
         "meta.type.annotation entity.name.type",
       ],

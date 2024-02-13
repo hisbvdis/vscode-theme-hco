@@ -5,7 +5,7 @@
   "colors": {
     "activityBarBadge.background": "#007acc",
     "editor.background": "#fafafa",
-    "editor.foreground": "#212121",
+    "editor.foreground": "#000000",
     "editor.inactiveSelectionBackground": "#e5ebf1",
     "editor.rangeHighlightBackground": "#00000000",
     "editor.selectionHighlightBackground": "#add6ff80",
@@ -48,25 +48,7 @@
   "tokenColors": [
     {
       "scope": [
-        "support.type.property-name.json",
-        "meta.embedded",
-        "meta.block",
-        "meta.definition.property",
-
-        "string.regexp keyword.other",
-        "constant.other.character-class.regexp",
-        "string.regexp punctuation.definition.string.begin",
-        "string.regexp punctuation.definition.string.end",
-      ],
-      "settings": {
-        "foreground": "#212121"
-      }
-    },
-    {
-      "scope": [
-        "keyword.operator.new",
-
-        "markup.bold",
+        "storage",
       ],
       "settings": {
         "foreground": "#000000"
@@ -74,54 +56,25 @@
     },
     {
       "scope": [
-        "storage",
+
+      ],
+      "settings": {
+        "foreground": "#cc0022"
+      }
+    },
+    {
+      "scope": [
         "keyword",
-
-        "punctuation.definition.template-expression.begin",
-        "punctuation.definition.template-expression.end",
+        "keyword.operator",
       ],
       "settings": {
-        // "foreground": "#1200db"
-        // "foreground": "#2a00ff"
-        // "foreground": "#1300e0"
-        // "foreground": "#e00025"
-        "foreground": "#db0049"
-      }
-    },
-    {
-      "scope": [
-        "constant.language",
-      ],
-      "settings": {
-        "foreground": "#a700d1"
-      }
-    },
-    {
-      "scope": [
-
-      ],
-      "settings": {
-        "foreground": "#00b0e6"
-      }
-    },
-    {
-      "scope": [
-        "entity.name.tag",
-        "constant.character",
-
-        "punctuation.definition.character-class.regexp",
-        "punctuation.definition.group.regexp",
-      ],
-      "settings": {
-        "foreground": "#d60024"
+        "foreground": "#e60026"
       }
     },
     {
       "scope": [
         "entity.name.function",
         "support.function",
-
-        "entity.other.attribute-name",
       ],
       "settings": {
         "foreground": "#ff8e80"
@@ -129,9 +82,23 @@
     },
     {
       "scope": [
+        "entity.name.tag",
+      ],
+      "settings": {
+        "foreground": "#1200db"
+      }
+    },
+    {
+      "scope": [
+        "entity.other.attribute-name",
+      ],
+      "settings": {
+        "foreground": "#00b0e6"
+      }
+    },
+    {
+      "scope": [
         "string",
-
-        "markup.inline.raw",
       ],
       "settings": {
         "foreground": "#009900"
@@ -139,8 +106,7 @@
     },
     {
       "scope": [
-        "constant.numeric",
-        "keyword.other.unit",
+
       ],
       "settings": {
         "foreground": "#CC9900"
@@ -148,8 +114,7 @@
     },
     {
       "scope": [
-        "markup.heading",
-        "markup.heading markup.inline.raw",
+
       ],
       "settings": {
         "foreground": "#a21319"
@@ -157,7 +122,7 @@
     },
     {
       "scope": [
-        "comment",
+
       ],
       "settings": {
         "foreground": "#969896"
@@ -165,25 +130,24 @@
     },
     {
       "scope": [
-        // "entity.name.type",
-        // "meta.type.annotation",
-        // "meta.return.type",
-        "support.type",
+
       ],
       "settings": {
-        // "foreground": "#78909C",
-        "foreground": "#a700d1"
+        "foreground": "#AF00DB"
       }
     },
     {
       "scope": [
-        // "storage",
-        "entity.name.tag",
-        "keyword.operator.new",
-        // "entity.name.type.interface",
 
-        "markup.bold",
-        "markup.heading",
+      ],
+      "settings": {
+        "foreground": "#78909C"
+      }
+    },
+    {
+      "scope": [
+        "storage",
+        "entity.name.tag",
       ],
       "settings": {
         "fontStyle": "bold"
@@ -192,7 +156,6 @@
     {
       "scope": [
         "keyword.control",
-        "markup.italic",
       ],
       "settings": {
         "fontStyle": "italic"
@@ -200,6 +163,7 @@
     },
     {
       "scope": [
+
       ],
       "settings": {
         "fontStyle": "italic bold",
@@ -207,13 +171,13 @@
     },
     {
       "scope": [
-        "storage.type.function.arrow",
+
       ],
       "settings": {
         "fontStyle": ""
       }
     }
   ],
-  "semanticHighlighting": true,
+  "semanticHighlighting": false,
   "semanticTokenColors": {},
 }
