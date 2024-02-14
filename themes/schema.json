@@ -5,7 +5,7 @@
   "colors": {
     "activityBarBadge.background": "#007acc",
     "editor.background": "#fafafa",
-    "editor.foreground": "#000000",
+    "editor.foreground": "#212121",
     "editor.inactiveSelectionBackground": "#e5ebf1",
     "editor.rangeHighlightBackground": "#00000000",
     "editor.selectionHighlightBackground": "#add6ff80",
@@ -48,10 +48,6 @@
   "tokenColors": [
     {
       "scope": [
-        "storage",
-        "keyword.operator.new",
-        "markup.bold",
-
         "support.type.property-name.json",
         "meta.embedded",
         "meta.block",
@@ -61,6 +57,16 @@
         "constant.other.character-class.regexp",
         "string.regexp punctuation.definition.string.begin",
         "string.regexp punctuation.definition.string.end",
+      ],
+      "settings": {
+        "foreground": "#212121"
+      }
+    },
+    {
+      "scope": [
+        "storage",
+        "keyword.operator.new",
+        "markup.bold",
       ],
       "settings": {
         "foreground": "#000000"
@@ -74,7 +80,7 @@
         "punctuation.definition.template-expression.end",
       ],
       "settings": {
-        "foreground": "#1300e6"
+        "foreground": "#1200d6"
       }
     },
     {

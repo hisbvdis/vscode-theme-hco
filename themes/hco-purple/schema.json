@@ -70,7 +70,7 @@
         "punctuation.definition.template-expression.end",
       ],
       "settings": {
-        "foreground": "#1200db"
+        "foreground": "#1200d6"
       }
     },
     {
@@ -89,7 +89,9 @@
         "constant.language",
       ],
       "settings": {
-        "foreground": "#a411d4"
+        // "foreground": "#a411d4"
+        "foreground": "#ad11d4"
+        // "foreground": "#AF00DB"
       }
     },
     {
@@ -157,7 +159,7 @@
         "meta.type.annotation entity.name.type",
       ],
       "settings": {
-        "foreground": "#78909C"
+        "foreground": "#0451a5"
       }
     },
     {

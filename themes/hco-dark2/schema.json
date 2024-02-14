@@ -3,8 +3,8 @@
   "name": "HCO",
   "colors": {
     "editor.foreground": "#EBEBEB",
-    "editor.background": "#1F1F1F",
-    "editor.selectionBackground": "#5f7e9748",
+    "editor.background": "#0D1117",
+    "editor.selectionBackground": "#FFFFFF60",
   },
   "tokenColors": [
     {
@@ -18,20 +18,20 @@
     },
     {
       "scope": [
-        "keyword",
+        "storage",
+        "constant.language",
+        "keyword.operator",
 
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
       ],
       "settings": {
-        "foreground": "#569CD6",
+        "foreground": "#5c95d6",
       }
     },
     {
       "scope": [
-        "storage",
-        "constant.language",
-        "keyword.operator",
+        "keyword.control",
       ],
       "settings": {
         "foreground": "#c0a5c5",
@@ -52,7 +52,8 @@
         "support.function",
       ],
       "settings": {
-        "foreground": "#9ae0fe"
+        // "foreground": "#9CDCFE"
+        "foreground": "#a8d8f0"
       }
     },
     {

@@ -3,7 +3,8 @@
   "name": "HCO",
   "colors": {
     "editor.foreground": "#EBEBEB",
-    "editor.background": "#303841",
+    "editor.background": "#0D1117",
+    "editor.selectionBackground": "#FFFFFF60",
   },
   "tokenColors": [
     {
@@ -51,7 +52,7 @@
         "support.function",
       ],
       "settings": {
-        "foreground": "#9ae0fe"
+        "foreground": "#9CDCFE"
       }
     },
     {
@@ -117,10 +118,12 @@
     },
     {
       "scope": [
-
+        "support.type.primitive",
+        "support.class",
+        "meta.type.annotation entity.name.type",
       ],
       "settings": {
-        "foreground": "#78909C",
+        "foreground": "#3b536d"
       }
     },
     {

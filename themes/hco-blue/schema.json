@@ -5,7 +5,7 @@
   "colors": {
     "activityBarBadge.background": "#007acc",
     "editor.background": "#fafafa",
-    "editor.foreground": "#000000",
+    "editor.foreground": "#212121",
     "editor.inactiveSelectionBackground": "#e5ebf1",
     "editor.rangeHighlightBackground": "#00000000",
     "editor.selectionHighlightBackground": "#add6ff80",
@@ -53,27 +53,29 @@
         "meta.block",
         "meta.definition.property",
 
+        "keyword.control",
+
         "string.regexp keyword.other",
         "constant.other.character-class.regexp",
         "string.regexp punctuation.definition.string.begin",
         "string.regexp punctuation.definition.string.end",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#212121"
       }
     },
     {
       "scope": [
         "storage",
+        "keyword.operator.new",
+        "markup.bold",
         "keyword",
-        "constant.language",
 
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
       ],
       "settings": {
-        // "foreground": "#1300e6"
-        "foreground": "#0000e6"
+        "foreground": "#1200d6"
       }
     },
     {
@@ -87,25 +89,15 @@
     },
     {
       "scope": [
-        "keyword.control",
-      ],
-      "settings": {
-        // "foreground": "#994CC3"
-        // "foreground": "#9d3fcf"
-        "foreground": "#ac26d9"
-      }
-    },
-    {
-      "scope": [
         "entity.name.tag",
-        "entity.name.tag support.class.component",
         "constant.character",
+        "support.class.component",
 
         "punctuation.definition.character-class.regexp",
         "punctuation.definition.group.regexp",
       ],
       "settings": {
-        "foreground": "#D60024"
+        "foreground": "#d60024"
       }
     },
     {
@@ -113,14 +105,20 @@
         "entity.other.attribute-name",
       ],
       "settings": {
-        // "foreground": "#ff8e80"
-        "foreground": "#ff9580"
+        "foreground": "#ff8e80"
+      }
+    },
+    {
+      "scope": [
+        "constant.language",
+      ],
+      "settings": {
+        "foreground": "#AF00DB"
       }
     },
     {
       "scope": [
         "string",
-
         "markup.inline.raw",
       ],
       "settings": {
@@ -165,7 +163,9 @@
     },
     {
       "scope": [
+        "storage",
         "entity.name.tag",
+        "keyword.operator.new",
 
         "markup.bold",
         "markup.heading",
@@ -185,7 +185,6 @@
     },
     {
       "scope": [
-
       ],
       "settings": {
         "fontStyle": "italic bold",

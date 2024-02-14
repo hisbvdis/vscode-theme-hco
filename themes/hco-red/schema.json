@@ -5,7 +5,7 @@
   "colors": {
     "activityBarBadge.background": "#007acc",
     "editor.background": "#fafafa",
-    "editor.foreground": "#000000",
+    "editor.foreground": "#212121",
     "editor.inactiveSelectionBackground": "#e5ebf1",
     "editor.rangeHighlightBackground": "#00000000",
     "editor.selectionHighlightBackground": "#add6ff80",
@@ -48,10 +48,10 @@
   "tokenColors": [
     {
       "scope": [
-        "storage",
+        "keyword.control",
       ],
       "settings": {
-        "foreground": "#000000"
+        "foreground": "#212121"
       }
     },
     {
@@ -59,25 +59,7 @@
 
       ],
       "settings": {
-        "foreground": "#cc0022"
-      }
-    },
-    {
-      "scope": [
-        "keyword",
-        "keyword.operator",
-      ],
-      "settings": {
-        "foreground": "#e60026"
-      }
-    },
-    {
-      "scope": [
-        "entity.name.function",
-        "support.function",
-      ],
-      "settings": {
-        "foreground": "#ff8e80"
+        "foreground": "#000000"
       }
     },
     {
@@ -85,7 +67,7 @@
         "entity.name.tag",
       ],
       "settings": {
-        "foreground": "#1200db"
+        "foreground": "#1200d6"
       }
     },
     {
@@ -94,6 +76,34 @@
       ],
       "settings": {
         "foreground": "#00b0e6"
+      }
+    },
+    {
+      "scope": [
+        "storage",
+        "keyword",
+      ],
+      "settings": {
+        // "foreground": "#d60024"
+        "foreground": "#d60000"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.function",
+        "support.function",
+      ],
+      "settings": {
+        // "foreground": "#ff8e80"
+        "foreground": "#ffaa80"
+      }
+    },
+    {
+      "scope": [
+
+      ],
+      "settings": {
+        "foreground": "#AF00DB"
       }
     },
     {
@@ -122,7 +132,7 @@
     },
     {
       "scope": [
-
+        "comment",
       ],
       "settings": {
         "foreground": "#969896"
@@ -133,15 +143,7 @@
 
       ],
       "settings": {
-        "foreground": "#AF00DB"
-      }
-    },
-    {
-      "scope": [
-
-      ],
-      "settings": {
-        "foreground": "#78909C"
+        "foreground": "#0451a5"
       }
     },
     {
@@ -155,7 +157,7 @@
     },
     {
       "scope": [
-        "keyword.control",
+
       ],
       "settings": {
         "fontStyle": "italic"
@@ -171,7 +173,7 @@
     },
     {
       "scope": [
-
+        "storage.type.function.arrow",
       ],
       "settings": {
         "fontStyle": ""
