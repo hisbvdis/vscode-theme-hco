@@ -98,11 +98,19 @@
     },
     {
       "scope": [
+        "keyword.control",
+      ],
+      "settings": {
+        "foreground": "#ff8e80"
+      }
+    },
+    {
+      "scope": [
         "entity.name.function",
         "support.function",
       ],
       "settings": {
-        "foreground": "#ff8e80"
+        "foreground": "#CC9900"
       }
     },
     {
@@ -119,14 +127,6 @@
       ],
       "settings": {
         "foreground": "#009900"
-      }
-    },
-    {
-      "scope": [
-        "keyword.control",
-      ],
-      "settings": {
-        "foreground": "#CC9900"
       }
     },
     {

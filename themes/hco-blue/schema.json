@@ -70,12 +70,14 @@
         "keyword.operator.new",
         "markup.bold",
         "keyword",
+        "constant.language",
 
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
       ],
       "settings": {
-        "foreground": "#1200d6"
+        // "foreground": "#1200d6"
+        "foreground": "#0024d6"
       }
     },
     {
@@ -89,6 +91,15 @@
     },
     {
       "scope": [
+        "keyword.control",
+      ],
+      "settings": {
+        // "foreground": "#9933cc"
+        "foreground": "#9a2fd0"
+      }
+    },
+    {
+      "scope": [
         "entity.name.tag",
         "constant.character",
         "support.class.component",
@@ -97,7 +108,8 @@
         "punctuation.definition.group.regexp",
       ],
       "settings": {
-        "foreground": "#d60024"
+        // "foreground": "#d61200"
+        "foreground": "#db0000"
       }
     },
     {
@@ -106,14 +118,6 @@
       ],
       "settings": {
         "foreground": "#ff8e80"
-      }
-    },
-    {
-      "scope": [
-        "constant.language",
-      ],
-      "settings": {
-        "foreground": "#AF00DB"
       }
     },
     {
