@@ -68,7 +68,6 @@
       "scope": [
         "storage",
         "keyword.operator.new",
-        "markup.bold",
         "keyword",
         "constant.language",
 
@@ -94,7 +93,6 @@
         "keyword.control",
       ],
       "settings": {
-        // "foreground": "#9933cc"
         "foreground": "#9a2fd0"
       }
     },
@@ -108,8 +106,8 @@
         "punctuation.definition.group.regexp",
       ],
       "settings": {
-        // "foreground": "#d61200"
-        "foreground": "#db0000"
+        // "foreground": "#db0000"
+        "foreground": "#e02500"
       }
     },
     {
@@ -159,7 +157,7 @@
       "scope": [
         "support.type.primitive",
         "support.class",
-        "meta.type.annotation entity.name.type",
+        "meta.type entity.name.type",
       ],
       "settings": {
         "foreground": "#0451a5"

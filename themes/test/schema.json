@@ -53,8 +53,6 @@
         "meta.block",
         "meta.definition.property",
 
-        "keyword.control",
-
         "string.regexp keyword.other",
         "constant.other.character-class.regexp",
         "string.regexp punctuation.definition.string.begin",
@@ -68,15 +66,21 @@
       "scope": [
         "storage",
         "keyword.operator.new",
+        "markup.bold",
+      ],
+      "settings": {
+        "foreground": "#000000"
+      }
+    },
+    {
+      "scope": [
         "keyword",
-        "constant.language",
 
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
       ],
       "settings": {
-        // "foreground": "#1200d6"
-        "foreground": "#0024d6"
+        "foreground": "#1200d6"
       }
     },
     {
@@ -90,14 +94,6 @@
     },
     {
       "scope": [
-        "keyword.control",
-      ],
-      "settings": {
-        "foreground": "#9a2fd0"
-      }
-    },
-    {
-      "scope": [
         "entity.name.tag",
         "constant.character",
         "support.class.component",
@@ -106,8 +102,7 @@
         "punctuation.definition.group.regexp",
       ],
       "settings": {
-        // "foreground": "#db0000"
-        "foreground": "#e02500"
+        "foreground": "#d60024"
       }
     },
     {
@@ -121,6 +116,7 @@
     {
       "scope": [
         "string",
+
         "markup.inline.raw",
       ],
       "settings": {
@@ -155,9 +151,17 @@
     },
     {
       "scope": [
+        "constant.language",
+      ],
+      "settings": {
+        "foreground": "#AF00DB"
+      }
+    },
+    {
+      "scope": [
         "support.type.primitive",
         "support.class",
-        "meta.type entity.name.type",
+        "meta.type.annotation entity.name.type",
       ],
       "settings": {
         "foreground": "#0451a5"
@@ -166,8 +170,9 @@
     {
       "scope": [
         "storage",
-        "entity.name.tag",
         "keyword.operator.new",
+
+        "entity.name.tag",
 
         "markup.bold",
         "markup.heading",
