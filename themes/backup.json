@@ -57,6 +57,8 @@
 
         "string.regexp keyword.other",
         "constant.other.character-class.regexp",
+        "string.regexp punctuation.definition.string.begin",
+        "string.regexp punctuation.definition.string.end",
       ],
       "settings": {
         "foreground": "#000000"
@@ -65,10 +67,12 @@
     {
       "scope": [
         "storage",
+        "keyword.operator.new",
         "keyword",
         "constant.language",
 
-        "string punctuation.definition",
+        "punctuation.definition.template-expression.begin",
+        "punctuation.definition.template-expression.end",
       ],
       "settings": {
         // "foreground": "#1200d6"
@@ -98,8 +102,8 @@
         "constant.character",
         "support.class.component",
 
-        // "punctuation.definition.character-class.regexp",
-        // "punctuation.definition.group.regexp",
+        "punctuation.definition.character-class.regexp",
+        "punctuation.definition.group.regexp",
       ],
       "settings": {
         // "foreground": "#db0000"
@@ -153,7 +157,7 @@
       "scope": [
         // "support.type.primitive",
         // "support.class",
-        // "entity.name.type", /* Заменить чем-то нужно, "fs" подсвечивает */
+        "entity.name.type",
         // "support.type",
         "meta.type.annotation support.type",
         "meta.type.parameters support.type",
@@ -166,8 +170,8 @@
     {
       "scope": [
         "storage",
-        "keyword",
         "entity.name.tag",
+        "keyword.operator.new",
 
         "markup.bold",
         "markup.heading",
@@ -194,7 +198,6 @@
     },
     {
       "scope": [
-        "keyword.operator",
         "storage.type.function.arrow",
       ],
       "settings": {
@@ -202,9 +205,6 @@
       }
     }
   ],
-  "semanticHighlighting": true,
-  "semanticTokenColors": {
-    "interface": "#0451a5",
-    "type": "#0451a5"
-  },
+  "semanticHighlighting": false,
+  "semanticTokenColors": {},
 }
