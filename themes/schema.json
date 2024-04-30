@@ -68,7 +68,8 @@
         "keyword",
         "constant.language",
 
-        "string punctuation.definition",
+        "string punctuation.definition.template-expression",
+        "string punctuation.definition.interpolation",
       ],
       "settings": {
         // "foreground": "#1200d6"
