@@ -5,7 +5,7 @@
   "colors": {
     "activityBarBadge.background": "#007acc",
     "editor.background": "#fafafa",
-    "editor.foreground": "#212121",
+    "editor.foreground": "#000000",
     "editor.inactiveSelectionBackground": "#e5ebf1",
     "editor.rangeHighlightBackground": "#00000000",
     "editor.selectionHighlightBackground": "#add6ff80",
@@ -48,15 +48,17 @@
   "tokenColors": [
     {
       "scope": [
-        "keyword.control",
-      ],
-      "settings": {
-        "foreground": "#212121"
-      }
-    },
-    {
-      "scope": [
+        "support.type.property-name.json",
+        "meta.property-name support.type",
+        "meta.embedded",
+        "meta.interpolation",
+        "meta.block",
+        "meta.definition.property",
 
+        "keyword.control",
+
+        "string.regexp keyword.other",
+        "constant.other.character-class.regexp",
       ],
       "settings": {
         "foreground": "#000000"
@@ -64,36 +66,16 @@
     },
     {
       "scope": [
-        "entity.name.tag",
-      ],
-      "settings": {
-        "foreground": "#1200d6"
-      }
-    },
-    {
-      "scope": [
-        "entity.other.attribute-name",
-      ],
-      "settings": {
-        "foreground": "#00b0e6"
-      }
-    },
-    {
-      "scope": [
         "storage",
         "keyword",
         "constant.language",
+
+        "string punctuation.definition.template-expression",
+        "string punctuation.definition.interpolation",
       ],
       "settings": {
-        "foreground": "#cc0033"
-      }
-    },
-    {
-      "scope": [
-        "keyword.operator",
-      ],
-      "settings": {
-        "foreground": "#d60000"
+        // "foreground": "#e02500"
+        "foreground": "#d60036"
       }
     },
     {
@@ -107,15 +89,37 @@
     },
     {
       "scope": [
-
+        "keyword.control",
       ],
       "settings": {
-        "foreground": "#7820bc"
+        "foreground": "#9a2fd0"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.tag",
+        "constant.character",
+        "support.class.component",
+
+        // "punctuation.definition.character-class.regexp",
+        // "punctuation.definition.group.regexp",
+      ],
+      "settings": {
+        "foreground": "#0024d6"
+      }
+    },
+    {
+      "scope": [
+        "entity.other.attribute-name",
+      ],
+      "settings": {
+        "foreground": "#00b0e6"
       }
     },
     {
       "scope": [
         "string",
+        "markup.inline.raw",
       ],
       "settings": {
         "foreground": "#009900"
@@ -123,7 +127,8 @@
     },
     {
       "scope": [
-        "keyword.control",
+        "constant.numeric",
+        "keyword.other.unit",
       ],
       "settings": {
         "foreground": "#CC9900"
@@ -131,7 +136,8 @@
     },
     {
       "scope": [
-
+        "markup.heading",
+        "markup.heading markup.inline.raw",
       ],
       "settings": {
         "foreground": "#a21319"
@@ -147,7 +153,13 @@
     },
     {
       "scope": [
-
+        // "support.type.primitive",
+        // "support.class",
+        "entity.name.type", /* Заменить чем-то нужно, "fs" подсвечивает */
+        "support.type",
+        "meta.type.annotation support.type",
+        "meta.type.parameters support.type",
+        "meta.return support.type",
       ],
       "settings": {
         "foreground": "#0451a5"
@@ -156,7 +168,11 @@
     {
       "scope": [
         "storage",
+        "keyword",
         "entity.name.tag",
+
+        "markup.bold",
+        "markup.heading",
       ],
       "settings": {
         "fontStyle": "bold"
@@ -165,6 +181,7 @@
     {
       "scope": [
         "keyword.control",
+        "markup.italic",
       ],
       "settings": {
         "fontStyle": "italic"
@@ -172,7 +189,6 @@
     },
     {
       "scope": [
-
       ],
       "settings": {
         "fontStyle": "italic bold",
@@ -180,6 +196,8 @@
     },
     {
       "scope": [
+        "keyword.operator",
+        "keyword.other.unit",
         "storage.type.function.arrow",
       ],
       "settings": {
@@ -187,6 +205,11 @@
       }
     }
   ],
-  "semanticHighlighting": false,
-  "semanticTokenColors": {},
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "interface": "#0451a5",
+    "type": "#0451a5",
+    "struct": "#0451a5",
+    "namespace": "#0451a5",
+  },
 }

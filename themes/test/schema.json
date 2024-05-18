@@ -52,6 +52,7 @@
         "meta.embedded",
         "meta.block",
         "meta.definition.property",
+        "meta.property-name",
 
         "keyword.control",
 
