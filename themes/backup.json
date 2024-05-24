@@ -49,7 +49,9 @@
     {
       "scope": [
         "support.type.property-name.json",
+        "meta.property-name support.type",
         "meta.embedded",
+        "meta.interpolation",
         "meta.block",
         "meta.definition.property",
 
@@ -57,8 +59,6 @@
 
         "string.regexp keyword.other",
         "constant.other.character-class.regexp",
-        "string.regexp punctuation.definition.string.begin",
-        "string.regexp punctuation.definition.string.end",
       ],
       "settings": {
         "foreground": "#000000"
@@ -67,12 +67,11 @@
     {
       "scope": [
         "storage",
-        "keyword.operator.new",
         "keyword",
         "constant.language",
 
-        "punctuation.definition.template-expression.begin",
-        "punctuation.definition.template-expression.end",
+        "string punctuation.definition.template-expression",
+        "string punctuation.definition.interpolation",
       ],
       "settings": {
         // "foreground": "#1200d6"
@@ -102,8 +101,8 @@
         "constant.character",
         "support.class.component",
 
-        "punctuation.definition.character-class.regexp",
-        "punctuation.definition.group.regexp",
+        // "punctuation.definition.character-class.regexp",
+        // "punctuation.definition.group.regexp",
       ],
       "settings": {
         // "foreground": "#db0000"
@@ -157,8 +156,8 @@
       "scope": [
         // "support.type.primitive",
         // "support.class",
-        "entity.name.type",
-        // "support.type",
+        "entity.name.type", /* Заменить чем-то нужно, "fs" подсвечивает */
+        "support.type",
         "meta.type.annotation support.type",
         "meta.type.parameters support.type",
         "meta.return support.type",
@@ -170,8 +169,8 @@
     {
       "scope": [
         "storage",
+        "keyword",
         "entity.name.tag",
-        "keyword.operator.new",
 
         "markup.bold",
         "markup.heading",
@@ -198,6 +197,8 @@
     },
     {
       "scope": [
+        "keyword.operator",
+        "keyword.other.unit",
         "storage.type.function.arrow",
       ],
       "settings": {
@@ -205,6 +206,11 @@
       }
     }
   ],
-  "semanticHighlighting": false,
-  "semanticTokenColors": {},
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "interface": "#0451a5",
+    "type": "#0451a5",
+    "struct": "#0451a5",
+    "namespace": "#0451a5",
+  },
 }

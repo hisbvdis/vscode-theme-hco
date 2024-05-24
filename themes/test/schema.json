@@ -33,7 +33,7 @@
     "tab.lastPinnedBorder": "#61616130",
     "list.activeSelectionIconForeground": "#fafafa",
     "terminal.ansiGreen": "#009900",
-    "terminal.ansiYellow": "#cc9900",
+    "terminal.ansiYellow": "#cca300",
     "editor.lineHighlightBorder": "#00000000",
     "editor.lineHighlightBackground": "#00000000",
     "editorIndentGuide.background1": "#dedede",
@@ -49,10 +49,11 @@
     {
       "scope": [
         "support.type.property-name.json",
+        "meta.property-name support.type",
         "meta.embedded",
+        "meta.interpolation",
         "meta.block",
         "meta.definition.property",
-        "meta.property-name",
 
         "keyword.control",
 
@@ -69,11 +70,11 @@
         "keyword",
         "constant.language",
 
-        "string punctuation.definition",
+        "string punctuation.definition.template-expression",
+        "string punctuation.definition.interpolation",
       ],
       "settings": {
-        // "foreground": "#1200d6"
-        "foreground": "#0024d6"
+        "foreground": "#2600e6"
       }
     },
     {
@@ -98,13 +99,9 @@
         "entity.name.tag",
         "constant.character",
         "support.class.component",
-
-        // "punctuation.definition.character-class.regexp",
-        // "punctuation.definition.group.regexp",
       ],
       "settings": {
-        // "foreground": "#db0000"
-        "foreground": "#e02500"
+        "foreground": "#d60024"
       }
     },
     {
@@ -112,7 +109,7 @@
         "entity.other.attribute-name",
       ],
       "settings": {
-        "foreground": "#ff8e80"
+        "foreground": "#ffa3b3"
       }
     },
     {
@@ -130,7 +127,7 @@
         "keyword.other.unit",
       ],
       "settings": {
-        "foreground": "#CC9900"
+        "foreground": "#0451a5"
       }
     },
     {
@@ -152,22 +149,26 @@
     },
     {
       "scope": [
-        // "support.type.primitive",
-        // "support.class",
-        // "entity.name.type", /* Заменить чем-то нужно, "fs" подсвечивает */
-        // "support.type",
-        "meta.type.annotation support.type",
-        "meta.type.parameters support.type",
-        "meta.return support.type",
+        "variable.parameter",
+        // "meta.parameters variable.parameter",
       ],
       "settings": {
-        "foreground": "#0451a5"
+        "foreground": "#cc6600"
+      }
+    },
+    {
+      "scope": [
+        "support.type",
+        "entity.name.type",
+        "variable.language",
+      ],
+      "settings": {
+        "foreground": "#ccbb00"
       }
     },
     {
       "scope": [
         "storage",
-        "keyword",
         "entity.name.tag",
 
         "markup.bold",
@@ -196,16 +197,19 @@
     {
       "scope": [
         "keyword.operator",
+        "keyword.other.unit",
         "storage.type.function.arrow",
       ],
       "settings": {
         "fontStyle": ""
       }
-    }
+    },
   ],
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "interface": "#0451a5",
-    "type": "#0451a5"
+    // "interface": "#cca300",
+    // "type": "#cca300",
+    // "struct": "#0451a5",
+    // "namespace": "#cca300",
   },
 }

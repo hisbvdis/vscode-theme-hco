@@ -33,7 +33,7 @@
     "tab.lastPinnedBorder": "#61616130",
     "list.activeSelectionIconForeground": "#fafafa",
     "terminal.ansiGreen": "#009900",
-    "terminal.ansiYellow": "#cc9900",
+    "terminal.ansiYellow": "#cca300",
     "editor.lineHighlightBorder": "#00000000",
     "editor.lineHighlightBackground": "#00000000",
     "editorIndentGuide.background1": "#dedede",
@@ -74,8 +74,9 @@
         "string punctuation.definition.interpolation",
       ],
       "settings": {
-        // "foreground": "#1200d6"
-        "foreground": "#0024d6"
+        // "foreground": "#2a00ff"
+        // "foreground": "#2800f0"
+        "foreground": "#2600e6"
       }
     },
     {
@@ -114,7 +115,7 @@
         "entity.other.attribute-name",
       ],
       "settings": {
-        "foreground": "#ff8e80"
+        "foreground": "#ff8a93"
       }
     },
     {
@@ -132,7 +133,9 @@
         "keyword.other.unit",
       ],
       "settings": {
-        "foreground": "#CC9900"
+        // "foreground": "#cca300"
+        // "foreground": "#0000FF"
+        "foreground": "#0451a5"
       }
     },
     {
@@ -154,22 +157,26 @@
     },
     {
       "scope": [
+        "support.type",
+        "entity.name.type",
+        "variable.language",
         // "support.type.primitive",
         // "support.class",
-        "entity.name.type", /* Заменить чем-то нужно, "fs" подсвечивает */
-        "support.type",
-        "meta.type.annotation support.type",
-        "meta.type.parameters support.type",
-        "meta.return support.type",
+        // "entity.name.type", /* Заменить чем-то нужно, "fs" подсвечивает */
+        // "support.type",
+        // "meta.type.annotation support.type",
+        // "meta.type.parameters support.type",
+        // "meta.return support.type",
       ],
       "settings": {
-        "foreground": "#0451a5"
+        // "foreground": "#0451a5"
+        "foreground": "#cca300"
       }
     },
     {
       "scope": [
         "storage",
-        "keyword",
+        // "keyword",
         "entity.name.tag",
 
         "markup.bold",
@@ -208,9 +215,9 @@
   ],
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "interface": "#0451a5",
-    "type": "#0451a5",
-    "struct": "#0451a5",
-    "namespace": "#0451a5",
+    // "interface": "#cca300",
+    // "type": "#cca300",
+    // "struct": "#0451a5",
+    // "namespace": "#cca300",
   },
 }
