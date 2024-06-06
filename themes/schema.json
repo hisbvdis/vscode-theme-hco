@@ -74,8 +74,6 @@
         "string punctuation.definition.interpolation",
       ],
       "settings": {
-        // "foreground": "#2a00ff"
-        // "foreground": "#2800f0"
         "foreground": "#2600e6"
       }
     },
@@ -101,13 +99,9 @@
         "entity.name.tag",
         "constant.character",
         "support.class.component",
-
-        // "punctuation.definition.character-class.regexp",
-        // "punctuation.definition.group.regexp",
       ],
       "settings": {
-        // "foreground": "#db0000"
-        "foreground": "#e02500"
+        "foreground": "#d60024"
       }
     },
     {
@@ -115,7 +109,7 @@
         "entity.other.attribute-name",
       ],
       "settings": {
-        "foreground": "#ff8a93"
+        "foreground": "#ffa3b3"
       }
     },
     {
@@ -133,8 +127,6 @@
         "keyword.other.unit",
       ],
       "settings": {
-        // "foreground": "#cca300"
-        // "foreground": "#0000FF"
         "foreground": "#0451a5"
       }
     },
@@ -157,26 +149,25 @@
     },
     {
       "scope": [
-        "support.type",
-        "entity.name.type",
-        "variable.language",
-        // "support.type.primitive",
-        // "support.class",
-        // "entity.name.type", /* Заменить чем-то нужно, "fs" подсвечивает */
-        // "support.type",
-        // "meta.type.annotation support.type",
-        // "meta.type.parameters support.type",
-        // "meta.return support.type",
+        // "variable.parameter",
+        "meta.parameters variable.parameter",
       ],
       "settings": {
-        // "foreground": "#0451a5"
-        "foreground": "#cca300"
+        "foreground": "#cc6600"
+      }
+    },
+    {
+      "scope": [
+        "support.type",
+      ],
+      "settings": {
+        // "foreground": "#ccbb00"
+        "foreground": "#c2b200"
       }
     },
     {
       "scope": [
         "storage",
-        // "keyword",
         "entity.name.tag",
 
         "markup.bold",
@@ -207,17 +198,17 @@
         "keyword.operator",
         "keyword.other.unit",
         "storage.type.function.arrow",
+        "storage.type.sql",
+        "storage.modifier.sql",
       ],
       "settings": {
         "fontStyle": ""
       }
-    }
+    },
   ],
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    // "interface": "#cca300",
-    // "type": "#cca300",
-    // "struct": "#0451a5",
-    // "namespace": "#cca300",
+    "interface": "#c2b200",
+    "type": "#c2b200",
   },
 }

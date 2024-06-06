@@ -149,8 +149,8 @@
     },
     {
       "scope": [
-        "variable.parameter",
-        // "meta.parameters variable.parameter",
+        // "variable.parameter",
+        "meta.parameters variable.parameter",
       ],
       "settings": {
         "foreground": "#cc6600"
@@ -163,7 +163,8 @@
         "variable.language",
       ],
       "settings": {
-        "foreground": "#ccbb00"
+        // "foreground": "#ccbb00"
+        "foreground": "#c2b200"
       }
     },
     {
