@@ -149,7 +149,6 @@
     },
     {
       "scope": [
-        // "variable.parameter",
         "meta.parameters variable.parameter",
       ],
       "settings": {
@@ -161,7 +160,6 @@
         "support.type",
       ],
       "settings": {
-        // "foreground": "#ccbb00"
         "foreground": "#c2b200"
       }
     },
@@ -210,5 +208,7 @@
   "semanticTokenColors": {
     "interface": "#c2b200",
     "type": "#c2b200",
+    "typeParameter": "#c2b200",
+    "variable": "#000000",
   },
 }
