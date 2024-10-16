@@ -3,7 +3,7 @@
 	"displayName": "HCO",
 	"description": "VS Code editor theme",
 	"publisher": "hisbvdis",
-	"version": "0.0.49",
+	"version": "0.0.50",
 	"homepage": "https://github.com/hisbvdis/hco",
 	"repository": {
 		"type": "git",
@@ -19,59 +19,19 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "HCO",
+				"label": "HCO (light)",
 				"uiTheme": "vs",
-				"path": "./themes/schema.json"
+				"path": "./themes/light.json"
 			},
 			{
-				"label": "HCOT (test)",
+				"label": "HCOS (light-saturated)",
 				"uiTheme": "vs",
-				"path": "./themes/test/schema.json"
-			},
-			{
-				"label": "HCOT2 (test2)",
-				"uiTheme": "vs",
-				"path": "./themes/test2/schema.json"
-			},
-			{
-				"label": "HCOT3 (test3)",
-				"uiTheme": "vs",
-				"path": "./themes/test3/schema.json"
-			},
-			{
-				"label": "HCOB (blue)",
-				"uiTheme": "vs",
-				"path": "./themes/blue/schema.json"
-			},
-			{
-				"label": "HCOP (purple)",
-				"uiTheme": "vs",
-				"path": "./themes/purple/schema.json"
-			},
-			{
-				"label": "HCOR (red)",
-				"uiTheme": "vs",
-				"path": "./themes/red/schema.json"
-			},
-			{
-				"label": "HCORR (red)",
-				"uiTheme": "vs",
-				"path": "./themes/red2/schema.json"
+				"path": "./themes/light-saturated.json"
 			},
 			{
 				"label": "HCOD (dark)",
 				"uiTheme": "vs-dark",
-				"path": "./themes/dark/schema.json"
-			},
-			{
-				"label": "HCOD2 (dark2)",
-				"uiTheme": "vs-dark",
-				"path": "./themes/dark2/schema.json"
-			},
-			{
-				"label": "HCOB (black)",
-				"uiTheme": "vs-dark",
-				"path": "./themes/black/schema.json"
+				"path": "./themes/dark.json"
 			}
 		]
 	},
@@ -79,7 +39,7 @@
 		"id": "522ea58a-3c2b-4da3-b0d6-411127e26605",
 		"publisherId": "a410cbcf-f0d3-46da-9bc1-db019d82227a",
 		"publisherDisplayName": "hisbvdis",
-		"installedTimestamp": 1717687828336,
+		"installedTimestamp": 1728745386718,
 		"targetPlatform": "undefined",
 		"updated": true,
 		"isPreReleaseVersion": false,

@@ -1,11 +1,11 @@
 {
   "$schema": "vscode://schemas/color-theme",
   "type": "light",
-  "name": "HCO",
+  "name": "HCO-light",
   "colors": {
     "activityBarBadge.background": "#007acc",
     "editor.background": "#fafafa",
-    "editor.foreground": "#212121",
+    "editor.foreground": "#000000",
     "editor.inactiveSelectionBackground": "#e5ebf1",
     "editor.rangeHighlightBackground": "#00000000",
     "editor.selectionHighlightBackground": "#add6ff80",
@@ -33,23 +33,33 @@
     "tab.lastPinnedBorder": "#61616130",
     "list.activeSelectionIconForeground": "#fafafa",
     "terminal.ansiGreen": "#009900",
-    "terminal.ansiYellow": "#cc9900",
+    "terminal.ansiYellow": "#cca300",
     "editor.lineHighlightBorder": "#00000000",
     "editor.lineHighlightBackground": "#00000000",
     "editorIndentGuide.background1": "#dedede",
     "editorIndentGuide.activeBackground1": "#b3b3b3",
+
+    // Scope lines color
     "editorBracketPairGuide.activeBackground1": "#8f8f8f",
     "editorBracketPairGuide.activeBackground2": "#8f8f8f",
     "editorBracketPairGuide.activeBackground3": "#8f8f8f",
     "editorBracketPairGuide.activeBackground4": "#8f8f8f",
     "editorBracketPairGuide.activeBackground5": "#8f8f8f",
-    "editorBracketPairGuide.activeBackground6": "#8f8f8f"
+    "editorBracketPairGuide.activeBackground6": "#8f8f8f",
+
+    // Brackets colors
+    // "editorBracketHighlight.foreground1": "#CC6600",
+    // "editorBracketHighlight.foreground2": "#AF00DB",
+    // "editorBracketHighlight.foreground3": "#0000FF",
+    // "editorBracketHighlight.unexpectedBracket.foreground": "#db6165"
   },
   "tokenColors": [
     {
       "scope": [
         "support.type.property-name.json",
+        "meta.property-name support.type",
         "meta.embedded",
+        "meta.interpolation",
         "meta.block",
         "meta.definition.property",
 
@@ -57,57 +67,50 @@
 
         "string.regexp keyword.other",
         "constant.other.character-class.regexp",
-        "string.regexp punctuation.definition.string.begin",
-        "string.regexp punctuation.definition.string.end",
       ],
       "settings": {
-        "foreground": "#212121"
+        "foreground": "#000000"
       }
     },
     {
       "scope": [
-        "storage",
-        "keyword.operator.new",
+        /* [V] */ "storage",
         "keyword",
-        "constant.language",
+        /* [V] */ "constant.language",
 
-        "punctuation.definition.template-expression.begin",
-        "punctuation.definition.template-expression.end",
+        "string punctuation.definition.template-expression",
+        "string punctuation.definition.interpolation",
       ],
       "settings": {
-        // "foreground": "#1200d6"
-        "foreground": "#0024d6"
+        "foreground": "#2600e6"
       }
     },
     {
       "scope": [
-        "entity.name.function",
+        /* [V] */"entity.name.function",
         "support.function",
       ],
       "settings": {
-        "foreground": "#00b0e6"
+        // "foreground": "#00b0e6"
+        "foreground": "#009ccc"
       }
     },
+    /* [V] */ {
+    /* [V] */   "scope": [
+    /* [V] */     "keyword.control",
+    /* [V] */   ],
+    /* [V] */   "settings": {
+    /* [V] */     "foreground": "#9a2fd0"
+    /* [V] */   }
+    /* [V] */ },
     {
       "scope": [
-        "keyword.control",
-      ],
-      "settings": {
-        "foreground": "#9a2fd0"
-      }
-    },
-    {
-      "scope": [
-        "entity.name.tag",
+        /* [V] */ "entity.name.tag",
         "constant.character",
         "support.class.component",
-
-        "punctuation.definition.character-class.regexp",
-        "punctuation.definition.group.regexp",
       ],
       "settings": {
-        // "foreground": "#db0000"
-        "foreground": "#e02500"
+        "foreground": "#d60024"
       }
     },
     {
@@ -115,12 +118,12 @@
         "entity.other.attribute-name",
       ],
       "settings": {
-        "foreground": "#ff8e80"
+        "foreground": "#ffa3b3"
       }
     },
     {
       "scope": [
-        "string",
+        /* [V] */ "string",
         "markup.inline.raw",
       ],
       "settings": {
@@ -129,20 +132,11 @@
     },
     {
       "scope": [
-        "variable.parameter",
-      ],
-      "settings": {
-        // "foreground": "#d68f00"
-        "foreground": "#953800"
-      }
-    },
-    {
-      "scope": [
         "constant.numeric",
         "keyword.other.unit",
       ],
       "settings": {
-        "foreground": "#CC9900"
+        "foreground": "#0451a5"
       }
     },
     {
@@ -154,30 +148,34 @@
         "foreground": "#a21319"
       }
     },
+    /* [V] */ {
+    /* [V] */   "scope": [
+    /* [V] */     "comment",
+    /* [V] */   ],
+    /* [V] */   "settings": {
+    /* [V] */     "foreground": "#969896"
+    /* [V] */   }
+    /* [V] */ },
     {
       "scope": [
-        "comment",
+        "meta.parameters variable.parameter",
       ],
       "settings": {
-        "foreground": "#969896"
+        "foreground": "#cc6600"
       }
     },
     {
       "scope": [
-        "support.type.primitive",
-        "support.class",
-        // "meta.type entity.name.type",
-        "entity.name.type",
+        "support.type",
       ],
       "settings": {
-        "foreground": "#0451a5"
+        "foreground": "#c2b200"
       }
     },
     {
       "scope": [
-        "storage",
+        /* [V] */ "storage",
         "entity.name.tag",
-        "keyword.operator.new",
 
         "markup.bold",
         "markup.heading",
@@ -188,7 +186,7 @@
     },
     {
       "scope": [
-        "keyword.control",
+        /* [V] */ "keyword.control",
         "markup.italic",
       ],
       "settings": {
@@ -204,13 +202,22 @@
     },
     {
       "scope": [
+        "keyword.operator",
+        "keyword.other.unit",
         "storage.type.function.arrow",
+        "storage.type.sql",
+        "storage.modifier.sql",
       ],
       "settings": {
         "fontStyle": ""
       }
-    }
+    },
   ],
-  "semanticHighlighting": false,
-  "semanticTokenColors": {},
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "interface": "#c2b200",
+    "type": "#c2b200",
+    "typeParameter": "#c2b200",
+    "variable": "#000000",
+  },
 }
