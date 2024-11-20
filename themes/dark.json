@@ -7,13 +7,13 @@
     "editor.foreground": "#d9d9d9",
     "editorCursor.foreground": "#FFFFFF",
 
-    // "editor.selectionBackground": "#ffffff90",
-    // "editor.wordHighlightBackground": "#ffffff50",
-    // "editor.wordHighlightStrongBackground": "#ffffff50",
-    // "editor.wordHighlightTextBackground": "#ffffff90",
+    "editor.selectionBackground": "#ffffff50",
+    "editor.wordHighlightBackground": "#ffffff50",
+    "editor.wordHighlightStrongBackground": "#ffffff50",
+    "editor.wordHighlightTextBackground": "#ffffff50",
 
-    // "editor.findMatchBackground": "#ffffff90",
-    // "editor.findMatchHighlightBackground": "#ffffff50",
+    "editor.findMatchBackground": "#ffffff50",
+    "editor.findMatchHighlightBackground": "#ffffff50",
   },
   "tokenColors": [
     {
@@ -55,7 +55,7 @@
         "entity.name.function",
       ],
       "settings": {
-        "foreground": "#9CDCFE"
+        "foreground": "#7DCFFF"
       }
     },
     {

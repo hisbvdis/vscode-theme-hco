@@ -46,12 +46,6 @@
     "editorBracketPairGuide.activeBackground4": "#8f8f8f",
     "editorBracketPairGuide.activeBackground5": "#8f8f8f",
     "editorBracketPairGuide.activeBackground6": "#8f8f8f",
-
-    // Brackets colors
-    // "editorBracketHighlight.foreground1": "#CC6600",
-    // "editorBracketHighlight.foreground2": "#AF00DB",
-    // "editorBracketHighlight.foreground3": "#0000FF",
-    // "editorBracketHighlight.unexpectedBracket.foreground": "#db6165"
   },
   "tokenColors": [
     {
@@ -74,9 +68,9 @@
     },
     {
       "scope": [
-        /* [V] */ "storage",
+         "storage",
         "keyword",
-        /* [V] */ "constant.language",
+         "constant.language",
 
         "string punctuation.definition.template-expression",
         "string punctuation.definition.interpolation",
@@ -87,7 +81,7 @@
     },
     {
       "scope": [
-        /* [V] */"entity.name.function",
+        "entity.name.function",
         "support.function",
       ],
       "settings": {
@@ -95,17 +89,17 @@
         "foreground": "#009ccc"
       }
     },
-    /* [V] */ {
-    /* [V] */   "scope": [
-    /* [V] */     "keyword.control",
-    /* [V] */   ],
-    /* [V] */   "settings": {
-    /* [V] */     "foreground": "#9a2fd0"
-    /* [V] */   }
-    /* [V] */ },
+     {
+       "scope": [
+         "keyword.control",
+       ],
+       "settings": {
+         "foreground": "#9a2fd0"
+       }
+     },
     {
       "scope": [
-        /* [V] */ "entity.name.tag",
+         "entity.name.tag",
         "constant.character",
         "support.class.component",
       ],
@@ -123,7 +117,7 @@
     },
     {
       "scope": [
-        /* [V] */ "string",
+         "string",
         "markup.inline.raw",
       ],
       "settings": {
@@ -148,14 +142,14 @@
         "foreground": "#a21319"
       }
     },
-    /* [V] */ {
-    /* [V] */   "scope": [
-    /* [V] */     "comment",
-    /* [V] */   ],
-    /* [V] */   "settings": {
-    /* [V] */     "foreground": "#969896"
-    /* [V] */   }
-    /* [V] */ },
+     {
+       "scope": [
+         "comment",
+       ],
+       "settings": {
+         "foreground": "#969896"
+       }
+     },
     {
       "scope": [
         "meta.parameters variable.parameter",
@@ -174,7 +168,7 @@
     },
     {
       "scope": [
-        /* [V] */ "storage",
+         "storage",
         "entity.name.tag",
 
         "markup.bold",
@@ -186,7 +180,7 @@
     },
     {
       "scope": [
-        /* [V] */ "keyword.control",
+         "keyword.control",
         "markup.italic",
       ],
       "settings": {
