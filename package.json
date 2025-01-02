@@ -24,6 +24,11 @@
 				"path": "./themes/light.json"
 			},
 			{
+				"label": "HCOB (backup)",
+				"uiTheme": "vs",
+				"path": "./themes/light-backup.json"
+			},
+			{
 				"label": "HCOS (light-saturated)",
 				"uiTheme": "vs",
 				"path": "./themes/light-saturated.json"
@@ -39,7 +44,7 @@
 		"id": "522ea58a-3c2b-4da3-b0d6-411127e26605",
 		"publisherId": "a410cbcf-f0d3-46da-9bc1-db019d82227a",
 		"publisherDisplayName": "hisbvdis",
-		"installedTimestamp": 1729920030053,
+		"installedTimestamp": 1732097282007,
 		"targetPlatform": "undefined",
 		"updated": true,
 		"isPreReleaseVersion": false,
@@ -47,6 +52,7 @@
 		"source": "gallery",
 		"isApplicationScoped": false,
 		"pinned": false,
-		"preRelease": false
+		"preRelease": false,
+		"size": 25756
 	}
 }
