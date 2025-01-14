@@ -42,12 +42,6 @@
 			"scope": [
 				// JSON property key
 				"support.type.property-name.json",
-				// Variables inside the template string
-				"meta.embedded",
-				// Markdown: commands flags
-				"constant.other.option",
-				// CSS property name
-				"meta.property-name support.type",
 			],
 			"settings": {
 				"foreground": "#000000"
@@ -57,43 +51,35 @@
 			"scope": [
 				// const, let, function
 				"storage",
-				// new, typeof,
-				"keyword",
-				// true/false
-				"constant.language",
-				// First and last curly braces of variable inside template string
-				"punctuation.definition.template-expression.begin",
-				"punctuation.definition.template-expression.end",
-				// Curlies inside JSX tags
-				// "punctuation.section.embedded",
 			],
 			"settings": {
-				"foreground": "#2600e6" /* Current (Bold font) */
-				// "foreground": "#1300e6" /* Current (Regular font) */
-				// "foreground": "#1400f5" /* Experimentes */
+				"foreground": "#c20037"
+			}
+		},
+		{
+			"scope": [
+				"keyword",
+			],
+			"settings": {
+				"foreground": "#db0000"
+				// "foreground": "#CF222E"
 			}
 		},
 		{
 			"scope": [
 				// User function name
 				"entity.name.function",
-				// Class name
-				"entity.name.type.class",
-				// CSS func
-				"support.function",
 			],
 			"settings": {
-				"foreground": "#009CCC"
+				"foreground": "#ffa3b3"
 			}
 		},
 		{
 			"scope": [
-				// return, import, if/else
-				"keyword.control",
+
 			],
 			"settings": {
-				// "foreground": "#9A2FD0" /* Current */
-				"foreground": "#9A2FD0" /* Experiment */
+				"foreground": "#6f42c1"
 			}
 		},
 		{
@@ -104,8 +90,7 @@
 				"support.class.component",
 			],
 			"settings": {
-				// "foreground": "#c20020" /* Current */
-				"foreground": "#c20030" /* Experiment */
+				"foreground": "#2600e6"
 			}
 		},
 		{
@@ -114,25 +99,20 @@
 				"entity.other.attribute-name",
 			],
 			"settings": {
-				"foreground": "#ffa3b3"
+				"foreground": "#009CCC"
 			}
 		},
 		{
 			"scope": [
-				// Strings
 				"string",
-				// Markdown: Code in backticks
-				"markup.inline.raw",
 			],
 			"settings": {
-				// "foreground": "#50A14F" /* Current */
-				"foreground": "#40A02B" /* Experiment */
+				"foreground": "#40A02B"
 			}
 		},
 		{
 			"scope": [
-				"constant.numeric",
-				"keyword.other.unit"
+
 			],
 			"settings": {
 				"foreground": "#0451a5"
@@ -140,8 +120,7 @@
 		},
 		{
 			"scope": [
-				// Markdown: Heading
-				"markup.heading"
+
 			],
 			"settings": {
 				"foreground": "#a21319"
@@ -152,34 +131,28 @@
 				"comment",
 			],
 			"settings": {
-				"foreground": "#9e9e9e" /* Current */
-				// "foreground": "#969896" /* Experiment */
+				"foreground": "#9e9e9e"
 			}
 		},
 		{
 			"scope": [
-				"punctuation.definition.tag",
+				"punctuation.definition.tag"
 			],
 			"settings": {
-				"foreground": "#737373" /* Current */
+				"foreground": "#737373"
 			}
 		},
 		{
 			"scope": [
-				// Function parameters (only in parameters section)
-				"meta.parameters variable.parameter"
+
 			],
 			"settings": {
-				"foreground": "#bd5e00" /* Current */
-				// "foreground": "#bd5800" /* Experimental */
+				"foreground": "#bd5e00"
 			}
 		},
 		{
 			"scope": [
-				// primitives
-				"support.type",
-				// Generic parameters
-				"entity.name.type",
+
 			],
 			"settings": {
 				"foreground": "#ad9f00"
@@ -189,14 +162,6 @@
 			"scope": [
 				// const, let, function
 				"storage",
-				// JSX tags
-				"support.class.component",
-				// HTML tags
-				"entity.name.tag",
-				// Markdown: Heading
-				"markup.heading",
-				// Markdown: Bold
-				"markup.bold",
 			],
 			"settings": {
 				"fontStyle": "bold"
@@ -221,8 +186,7 @@
 		},
 		{
 			"scope": [
-				// async
-				"storage.modifier",
+
 			],
 			"settings": {
 				"fontStyle": ""
