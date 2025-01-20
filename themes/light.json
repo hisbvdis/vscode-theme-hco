@@ -29,12 +29,12 @@
 		// BRACKETS AND BRACKET GUIDES
 		// ======================================================
 		"editorBracketHighlight.foreground1": "#333333",
-		"editorBracketPairGuide.activeBackground1": "#333333",
 		"editorBracketHighlight.foreground2": "#333333",
-		"editorBracketPairGuide.activeBackground2": "#333333",
 		"editorBracketHighlight.foreground3": "#333333",
-		"editorBracketPairGuide.activeBackground3": "#333333",
 		"editorBracketHighlight.foreground4": "#333333",
+		"editorBracketPairGuide.activeBackground1": "#333333",
+		"editorBracketPairGuide.activeBackground2": "#333333",
+		"editorBracketPairGuide.activeBackground3": "#333333",
 		"editorBracketPairGuide.activeBackground4": "#333333",
 	},
 	"tokenColors": [
@@ -83,7 +83,16 @@
 				"support.function",
 			],
 			"settings": {
-				"foreground": "#009CCC"
+				"foreground": "#009CCC" /* Current */
+				// "foreground": "#00aacc"    /* Hue: -1 */
+			}
+		},
+		{
+			"scope": [
+				"keyword.operator",
+			],
+			"settings": {
+				// "foreground": "#0184BC"
 			}
 		},
 		{
@@ -92,8 +101,7 @@
 				"keyword.control",
 			],
 			"settings": {
-				// "foreground": "#9A2FD0" /* Current */
-				"foreground": "#9A2FD0" /* Experiment */
+				"foreground": "#9A2FD0" /* Current */
 			}
 		},
 		{
@@ -149,6 +157,7 @@
 		},
 		{
 			"scope": [
+				// Comments
 				"comment",
 			],
 			"settings": {
@@ -158,6 +167,7 @@
 		},
 		{
 			"scope": [
+				// HTML angel brackets
 				"punctuation.definition.tag",
 			],
 			"settings": {
@@ -206,6 +216,8 @@
 			"scope": [
 				// return, import, if/else
 				"keyword.control",
+				// Comments
+				"comment",
 			],
 			"settings": {
 				"fontStyle": "italic"
