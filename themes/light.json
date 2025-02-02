@@ -75,10 +75,12 @@
 		},
 		{
 			"scope": [
+				// Any function calls and methods
+				"meta.function-call.generic",
 				// User function name
-				"entity.name.function",
+				// "entity.name.function",
 				// Class name
-				"entity.name.type.class",
+				// "entity.name.type.class",
 				// CSS func
 				"support.function",
 			],
@@ -188,8 +190,8 @@
 			"scope": [
 				// primitives
 				"support.type",
-				// Generic parameters
-				"entity.name.type",
+				// Generic parameters (no, because highlights "class")
+				// "entity.name.type",
 			],
 			"settings": {
 				"foreground": "#ad9f00"
@@ -218,6 +220,8 @@
 				"keyword.control",
 				// Comments
 				"comment",
+				// Markdown: italic formatting
+				"markup.italic",
 			],
 			"settings": {
 				"fontStyle": "italic"
@@ -244,6 +248,10 @@
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		// Array, Object, Math
-		"class.defaultLibrary": "#000000",
+		// "class.defaultLibrary": "#000000",
+		// 
+		// "type": "#c2b200",
+		// 
+		"variable": "#000000",
 	}
 }
