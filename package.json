@@ -3,7 +3,7 @@
 	"displayName": "HCO",
 	"description": "VS Code editor theme",
 	"publisher": "hisbvdis",
-	"version": "0.0.57",
+	"version": "0.0.58",
 	"homepage": "https://github.com/hisbvdis/hco",
 	"repository": {
 		"type": "git",
@@ -42,6 +42,16 @@
 				"label": "HCOD (dark)",
 				"uiTheme": "vs-dark",
 				"path": "./themes/dark.json"
+			},
+			{
+				"label": "HCOSE (semantic)",
+				"uiTheme": "vs",
+				"path": "./themes/light-semantic.json"
+			},
+			{
+				"label": "HCONS (not-semantic)",
+				"uiTheme": "vs",
+				"path": "./themes/light-not-semantic.json"
 			}
 		]
 	},
@@ -49,7 +59,7 @@
 		"id": "522ea58a-3c2b-4da3-b0d6-411127e26605",
 		"publisherId": "a410cbcf-f0d3-46da-9bc1-db019d82227a",
 		"publisherDisplayName": "hisbvdis",
-		"installedTimestamp": 1737922018058,
+		"installedTimestamp": 1738491403073,
 		"targetPlatform": "undefined",
 		"updated": true,
 		"isPreReleaseVersion": false,
@@ -58,6 +68,6 @@
 		"isApplicationScoped": false,
 		"pinned": false,
 		"preRelease": false,
-		"size": 27384
+		"size": 27626
 	}
 }

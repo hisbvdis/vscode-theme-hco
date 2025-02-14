@@ -76,8 +76,9 @@
 				// "punctuation.section.embedded",
 			],
 			"settings": {
-				// "foreground": "#2600e6" /* Current (Bold font) */
-				"foreground": "#1300e6" /* Experimentes: More blue */
+				"foreground": "#2600e6" /* Current (Bold font) */
+				// "foreground": "#1300e6" /* Current (Regular font) */
+				// "foreground": "#1400f5" /* Experimentes */
 			}
 		},
 		{
@@ -88,9 +89,7 @@
 				// "meta.function-call.generic",
 				// CSS func
 				"support.function",
-				// Default classes like Promise
-				// - bad: Highlights Promise when it is not callable
-				// "support.class",
+				// "entity.name.type.class",
 			],
 			"settings": {
 				"foreground": "#009CCC" /* Current */
@@ -102,7 +101,7 @@
 				"keyword.operator",
 			],
 			"settings": {
-				"foreground": "#0000FF"
+				// "foreground": "#0184BC"
 			}
 		},
 		{
@@ -271,8 +270,8 @@
 		"typeParameter": "#ad9f00",
 		// Function parameters
 		"parameter.declaration": "#BD5E00",
-		// "class.declaration": "#009CCC",
-		// "enum": "#ad9f00",
-		// "class.defaultLibrary": "#009CCC",
+		"class.declaration": "#009CCC",
+		"enum": "#ad9f00",
+		"class.defaultLibrary": "#009CCC",
 	}
 }
