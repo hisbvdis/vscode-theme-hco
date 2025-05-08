@@ -4,46 +4,64 @@
 	"name": "HCO-light-saturated",
 	"colors": {
 		// ======================================================
-		// MAIN BACKGROUND
+		// BACKGROUND
 		// ======================================================
-		"editor.background": "#ededed", /* Current */
-		// "editor.background": "#f2f2f2", /* Experiment */
-		"sideBar.background": "#ededed",
-
+		// Editor
+		"editor.background": "#f0f0f0",
+		// Sidebar
+		"sideBar.background": "#f0f0f0",
+		// Tabs
+		"tab.activeBackground": "#f0f0f0",
 		// ======================================================
-		// MAIN FOREGROUND
+		// FOREGROUND
 		// ======================================================
-		"editor.foreground": "#000000",
+		"editor.foreground": "#24292e",
 
 		// ======================================================
 		// TABS
 		// ======================================================
-		// Active tab
-		"tab.activeBackground": "#ededed",
 		// Inactive tab
 		"tab.inactiveBackground": "#d9d9d9",
 		// Tabs bar background
 		"editorGroupHeader.tabsBackground": "#cfcfcf",
-
 		// ======================================================
 		// SIDEBAR
 		// ======================================================
 		// Active tab
 		"sideBar.border": "#C7C7C7",
-
 		// ======================================================
 		// BRACKETS AND BRACKET GUIDES
 		// ======================================================
-		"editorBracketHighlight.foreground1": "#333333",
-		"editorBracketHighlight.foreground2": "#333333",
-		"editorBracketHighlight.foreground3": "#333333",
-		"editorBracketHighlight.foreground4": "#333333",
-		"editorBracketPairGuide.activeBackground1": "#333333",
-		"editorBracketPairGuide.activeBackground2": "#333333",
-		"editorBracketPairGuide.activeBackground3": "#333333",
-		"editorBracketPairGuide.activeBackground4": "#333333",
+		"editorBracketHighlight.foreground1": "#24292e",
+		"editorBracketHighlight.foreground2": "#24292e",
+		"editorBracketHighlight.foreground3": "#24292e",
+		"editorBracketHighlight.foreground4": "#24292e",
+		"editorBracketPairGuide.activeBackground1": "#000000",
+		"editorBracketPairGuide.activeBackground2": "#000000",
+		"editorBracketPairGuide.activeBackground3": "#000000",
+		"editorBracketPairGuide.activeBackground4": "#000000"
 	},
 	"tokenColors": [
+		{
+			"scope": [
+				// Comments
+				"comment"
+			],
+			"settings": {
+				"foreground": "#9e9e9e"
+			}
+		},
+		{
+			"scope": [
+				// 
+				"meta.object-literal.key"
+			],
+			"settings": {
+				// "foreground": "#78909C"
+				// "foreground": "#987252"
+				// "foreground": "#856347"
+			}
+		},
 		{
 			"scope": [
 				// JSON property key
@@ -56,9 +74,11 @@
 				"meta.property-name support.type",
 				// BAD: replaces "function" highlighting
 				// "variable.other",
+				// HTML angel brackets
+				"punctuation.definition.tag"
 			],
 			"settings": {
-				"foreground": "#000000"
+				"foreground": "#24292e"
 			}
 		},
 		{
@@ -72,46 +92,34 @@
 				// First and last curly braces of variable inside template string
 				"punctuation.definition.template-expression.begin",
 				"punctuation.definition.template-expression.end",
-				// Curlies inside JSX tags
-				// "punctuation.section.embedded",
+				// Optional operator "?"
+				"punctuation.accessor.optional",
+				// Arrow function's "arrow" character
+				"storage.type.function.arrow"
 			],
 			"settings": {
-				"foreground": "#2600e6" /* Current (Bold font) */
-				// "foreground": "#1300e6" /* Current (Regular font) */
-				// "foreground": "#1400f5" /* Experimentes */
+				"foreground": "#d73a49"
 			}
 		},
 		{
 			"scope": [
 				// User function name
 				"entity.name.function",
-				// Any function calls and methods (doesn't highlight function call in code popups)
-				// "meta.function-call.generic",
 				// CSS func
-				"support.function",
-				"entity.name.type.class",
-				"support.class",
+				"support.function"
 			],
 			"settings": {
-				"foreground": "#009CCC" /* Current */
-				// "foreground": "#00aacc"    /* Hue: -1 */
-			}
-		},
-		{
-			"scope": [
-				"keyword.operator",
-			],
-			"settings": {
-				// "foreground": "#0184BC"
+				// "foreground": "#3699ba"
+				"foreground": "#6f42c1"
 			}
 		},
 		{
 			"scope": [
 				// return, import, if/else
-				"keyword.control",
+				"keyword.control"
 			],
 			"settings": {
-				"foreground": "#9A2FD0" /* Current */
+				// "foreground": "#942dc8"
 			}
 		},
 		{
@@ -119,20 +127,19 @@
 				// HTML tags
 				"entity.name.tag",
 				// JSX tags
-				"support.class.component",
+				"support.class.component"
 			],
 			"settings": {
-				// "foreground": "#c20020" /* Current */
-				"foreground": "#c20030" /* Experiment */
+				// "foreground": "#c70021"
 			}
 		},
 		{
 			"scope": [
 				// Attributes
-				"entity.other.attribute-name",
+				"entity.other.attribute-name"
 			],
 			"settings": {
-				"foreground": "#ffa3b3"
+				// "foreground": "#ec93a2"
 			}
 		},
 		{
@@ -140,59 +147,33 @@
 				// Strings
 				"string",
 				// Markdown: Code in backticks
-				"markup.inline.raw",
+				"markup.inline.raw"
 			],
 			"settings": {
-				// "foreground": "#40A02B" /* Current */
-				"foreground": "#3f9d2a" /* Experiment */
+				"foreground": "#44922a"
 			}
 		},
 		{
-			"scope": [
-				"constant.numeric",
-				"keyword.other.unit"
-			],
+			"scope": ["constant.numeric", "keyword.other.unit"],
 			"settings": {
-				"foreground": "#0451a5"
+				// "foreground": "#0451a5"
 			}
 		},
 		{
 			"scope": [
 				// Markdown: Heading
-				"markup.heading"
+				"markup.heading",
+				// HTML: Escape sequence (&nbsp;)
+				"constant.character"
 			],
 			"settings": {
-				"foreground": "#a21319"
+				// "foreground": "#a21319"
 			}
 		},
 		{
-			"scope": [
-				// Comments
-				"comment",
-			],
+			"scope": ["variable.object.property"],
 			"settings": {
-				"foreground": "#9e9e9e" /* Current */
-				// "foreground": "#969896" /* Experiment */
-			}
-		},
-		{
-			"scope": [
-				// HTML angel brackets
-				"punctuation.definition.tag",
-			],
-			"settings": {
-				"foreground": "#737373" /* Current */
-			}
-		},
-		{
-			"scope": [
-				// Function parameters (only in parameters section)
-				// "meta.parameters variable.parameter"
-				"variable.parameter"
-			],
-			"settings": {
-				"foreground": "#bd5e00" /* Current */
-				// "foreground": "#bd5800" /* Experimental */
+				// "foreground": "#b55908"
 			}
 		},
 		{
@@ -202,29 +183,29 @@
 				// Generic parameters
 				// - bad:  highlights "class" and others
 				// - good: highlights "interfaces" in code popups
-				"entity.name.type",
+				// "entity.name.type",
 				// Return type:
 				// - good: sets color to the type assignment of the "class" without color
-				// "meta.return.type entity.name.type",
-				// "meta.type.annotation entity.name.type",
-				// "meta.type.parameters entity.name.type",
+				"meta.return.type entity.name.type",
+				"meta.type.annotation entity.name.type",
+				"meta.type.parameters entity.name.type"
 			],
 			"settings": {
-				"foreground": "#ad9f00"
+				// "foreground": "#92870c"
 			}
 		},
 		{
 			"scope": [
 				// const, let, function
-				"storage",
+				// "storage",
 				// JSX tags
-				"support.class.component",
+				// "support.class.component",
 				// HTML tags
-				"entity.name.tag",
+				// "entity.name.tag",
 				// Markdown: Heading
 				"markup.heading",
 				// Markdown: Bold
-				"markup.bold",
+				"markup.bold"
 			],
 			"settings": {
 				"fontStyle": "bold"
@@ -237,18 +218,10 @@
 				// Comments
 				"comment",
 				// Markdown: italic formatting
-				"markup.italic",
+				"markup.italic"
 			],
 			"settings": {
 				"fontStyle": "italic"
-			}
-		},
-		{
-			"scope":[
-
-			],
-			"settings": {
-				"fontStyle": "italic bold"
 			}
 		},
 		{
@@ -256,23 +229,20 @@
 				// async, extends, public, readonly
 				// "storage.modifier",
 				// Arrow function's "arrow" character
-				"storage.type.function.arrow",
+				"storage.type.function.arrow"
 			],
 			"settings": {
 				"fontStyle": ""
 			}
 		}
 	],
-	"semanticHighlighting": false,
+	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		// TS: interface type
-		"interface": "#ad9f00",
+		// "interface": "#92870c",
 		// TS: generic parameters
-		"typeParameter": "#ad9f00",
+		// "typeParameter": "#92870c",
 		// Function parameters
-		"parameter.declaration": "#BD5E00",
-		"class.declaration": "#009CCC",
-		"enum": "#ad9f00",
-		"class.defaultLibrary": "#009CCC",
+		"parameter.declaration": "#e36209"
 	}
 }

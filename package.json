@@ -3,7 +3,7 @@
 	"displayName": "HCO",
 	"description": "VS Code editor theme",
 	"publisher": "hisbvdis",
-	"version": "0.0.58",
+	"version": "0.0.61",
 	"homepage": "https://github.com/hisbvdis/hco",
 	"repository": {
 		"type": "git",
@@ -19,39 +19,34 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "HCO (light)",
+				"label": "HCO",
 				"uiTheme": "vs",
 				"path": "./themes/light.json"
 			},
 			{
-				"label": "HCOB (light-backup)",
+				"label": "HCO (Red)",
 				"uiTheme": "vs",
-				"path": "./themes/light-backup.json"
+				"path": "./themes/red.json"
 			},
 			{
-				"label": "HCOS (light-saturated)",
+				"label": "HCO (Github)",
 				"uiTheme": "vs",
-				"path": "./themes/light-saturated.json"
+				"path": "./themes/github.json"
 			},
 			{
-				"label": "HCOR (light-red)",
+				"label": "HCO (Material)",
 				"uiTheme": "vs",
-				"path": "./themes/light-red.json"
+				"path": "./themes/material.json"
 			},
 			{
-				"label": "HCOD (dark)",
+				"label": "HCO (Atom)",
+				"uiTheme": "vs",
+				"path": "./themes/atom.json"
+			},
+			{
+				"label": "HCO (Dark)",
 				"uiTheme": "vs-dark",
 				"path": "./themes/dark.json"
-			},
-			{
-				"label": "HCOSE (semantic)",
-				"uiTheme": "vs",
-				"path": "./themes/light-semantic.json"
-			},
-			{
-				"label": "HCONS (not-semantic)",
-				"uiTheme": "vs",
-				"path": "./themes/light-not-semantic.json"
 			}
 		]
 	},
@@ -59,7 +54,7 @@
 		"id": "522ea58a-3c2b-4da3-b0d6-411127e26605",
 		"publisherId": "a410cbcf-f0d3-46da-9bc1-db019d82227a",
 		"publisherDisplayName": "hisbvdis",
-		"installedTimestamp": 1738491403073,
+		"installedTimestamp": 1745690117727,
 		"targetPlatform": "undefined",
 		"updated": true,
 		"isPreReleaseVersion": false,
@@ -68,6 +63,6 @@
 		"isApplicationScoped": false,
 		"pinned": false,
 		"preRelease": false,
-		"size": 27626
+		"size": 28904
 	}
 }
