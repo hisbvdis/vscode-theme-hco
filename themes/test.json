@@ -74,16 +74,6 @@
 				"punctuation.definition.tag",
         // C#: variables inside strings
         "variable",
-        // Redefine "entity.name.type"
-        "entity.name.type.class",
-        // Object: property key as a string
-        // No! Any strings in property key get black
-        // "meta.object-literal.key string",
-        // Type "object": property key as a string
-        // No! String is black in the Generic type argument
-        // "meta.field.declaration  string",
-        // TS: Enums
-        // "entity.name.type.enum",
 			],
 			"settings": {
 				"foreground": "#0c0a09"
@@ -140,6 +130,17 @@
 		},
 		{
 			"scope": [
+        // = ? > < * :
+				"keyword.operator",
+        // =>
+        "storage.type.function.arrow",
+			],
+			"settings": {
+				"foreground": "#EB435E"
+			}
+		},
+		{
+			"scope": [
 				// HTML tags
 				"entity.name.tag",
 				// JSX tags
@@ -192,15 +193,14 @@
 		{
 			"scope": [
         // All types???
-        // "entity.name.type",
+        "entity.name.type",
 				// primitives
 				"support.type",
 				// Return type:
-				"meta.return.type entity.name.type",
-				"meta.type.annotation entity.name.type",
-				"meta.type.parameters entity.name.type",
-        // Enum as a type definition
-        // "meta.type.annotation entity.name.type.enum",
+				// "meta.return.type entity.name.type",
+				// "meta.type.annotation entity.name.type",
+				// "meta.type.parameters entity.name.type",
+        
 			],
 			"settings": {
 				"foreground": "#9e9315"
@@ -240,11 +240,10 @@
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
     // TS: interface type
-		"interface": "#9e9315",
+		// "interface": "#9e9315",
 		// TS: generic parameters
-		"typeParameter": "#9e9315",
+		// "typeParameter": "#9e9315",
 		// Parameters
-		// "parameter.declaration": "#b55908",
-		"parameter.declaration": "#b56d08",
+		"parameter.declaration": "#b55908",
 	}
 }

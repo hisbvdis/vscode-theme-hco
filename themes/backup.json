@@ -40,13 +40,6 @@
 		"editorBracketPairGuide.activeBackground2": "#0c0a09",
 		"editorBracketPairGuide.activeBackground3": "#0c0a09",
 		"editorBracketPairGuide.activeBackground4": "#000000"
-
-    // "editorBracketHighlight.foreground1": "#005cc5",
-		// "editorBracketHighlight.foreground2": "#e36209",
-		// "editorBracketHighlight.foreground3": "#5a32a3",
-		// "editorBracketHighlight.foreground4": "#005cc5",
-		// "editorBracketHighlight.foreground5": "#e36209",
-		// "editorBracketHighlight.foreground6": "#5a32a3",
 	},
 	"tokenColors": [
 		{
@@ -74,16 +67,6 @@
 				"punctuation.definition.tag",
         // C#: variables inside strings
         "variable",
-        // Redefine "entity.name.type"
-        "entity.name.type.class",
-        // Object: property key as a string
-        // No! Any strings in property key get black
-        // "meta.object-literal.key string",
-        // Type "object": property key as a string
-        // No! String is black in the Generic type argument
-        // "meta.field.declaration  string",
-        // TS: Enums
-        // "entity.name.type.enum",
 			],
 			"settings": {
 				"foreground": "#0c0a09"
@@ -102,12 +85,12 @@
 				"punctuation.definition.template-expression.end",
 				// Optional operator "?"
 				"punctuation.accessor.optional",
+				// Arrow function's "arrow" character
+				"storage.type.function.arrow",
         // Classes: this, super()
         "variable.language",
         // new
         "keyword.operator.new",
-        // typeof
-        "keyword.operator.expression",
 			],
 			"settings": {
 				// "foreground": "#0000f0"
@@ -191,16 +174,12 @@
 		},
 		{
 			"scope": [
-        // All types???
-        // "entity.name.type",
 				// primitives
 				"support.type",
 				// Return type:
 				"meta.return.type entity.name.type",
 				"meta.type.annotation entity.name.type",
-				"meta.type.parameters entity.name.type",
-        // Enum as a type definition
-        // "meta.type.annotation entity.name.type.enum",
+				"meta.type.parameters entity.name.type"
 			],
 			"settings": {
 				"foreground": "#9e9315"
@@ -235,16 +214,26 @@
 			"settings": {
 				"fontStyle": "italic"
 			}
+		},
+		{
+			"scope": [
+				// async, extends, public, readonly
+				// "storage.modifier",
+				// Arrow function's "arrow" character
+				"storage.type.function.arrow"
+			],
+			"settings": {
+				"fontStyle": ""
+			}
 		}
 	],
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
-    // TS: interface type
+		// TS: interface type
 		"interface": "#9e9315",
 		// TS: generic parameters
 		"typeParameter": "#9e9315",
 		// Parameters
-		// "parameter.declaration": "#b55908",
-		"parameter.declaration": "#b56d08",
+		"parameter.declaration": "#b55908",
 	}
 }
