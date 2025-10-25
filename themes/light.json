@@ -50,7 +50,7 @@
     "editorBracketPairGuide.activeBackground1": "#0C0A09",
     "editorBracketPairGuide.activeBackground2": "#0C0A09",
     "editorBracketPairGuide.activeBackground3": "#0C0A09",
-    "editorBracketPairGuide.activeBackground4": "#0C0A09",
+    "editorBracketPairGuide.activeBackground4": "#0C0A09"
   },
   "tokenColors": [
     {
@@ -75,7 +75,7 @@
         // HTML angel brackets
         "punctuation.definition.tag",
         // C#: variables inside strings
-        "meta.expression",
+        "meta.expression"
       ],
       "settings": {
         "foreground": "#0C0A09"
@@ -97,7 +97,7 @@
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
         // Classes: this, super()
-        "variable.language",
+        "variable.language"
       ],
       "settings": {
         "foreground": "#0000e0" /* Light */
@@ -113,8 +113,7 @@
         // "meta.function-call support.class",
         // Classes: override "entity.name.type"
         // "entity.name.type.class",
-        //
-        "entity.other.inherited-class",
+        "entity.other.inherited-class"
       ],
       "settings": {
         // "foreground": "#379cbe" /* Origin - Backup */
@@ -124,7 +123,7 @@
     {
       "scope": [
         // return, import, if/else
-        "keyword.control",
+        "keyword.control"
       ],
       "settings": {
         "foreground": "#9b61d1" /* Light */
@@ -166,8 +165,10 @@
         // Numbers / Digits
         "constant.numeric",
         "keyword.other.unit",
+        // Minuse/Plus with Numbers/Digits
+        "keyword.operator.arithmetic",
         // true/false
-        "constant.language",
+        "constant.language"
       ],
       "settings": {
         "foreground": "#0451a5"
@@ -199,7 +200,7 @@
         // Enum as a type definition
         // "meta.type.annotation entity.name.type.enum",
         // TS: Interface declaration
-        "entity.name.type.interface",
+        "entity.name.type.interface"
       ],
       "settings": {
         "foreground": "#9e9315"
@@ -246,6 +247,6 @@
     "class.defaultLibrary": "#2595b1",
     "class.declaration": "#2595b1",
     // Parameters
-    "parameter.declaration": "#b56d08",
+    "parameter.declaration": "#b56d08"
   }
 }
