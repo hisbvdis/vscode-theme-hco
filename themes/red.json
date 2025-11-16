@@ -87,8 +87,8 @@
         "keyword",
       ],
       "settings": {
-        // "foreground": "#bd1000"
-        "foreground": "#cf222e"
+        // "foreground": "#d10034"
+        "foreground": "#cc0033"
       }
     },
     {
@@ -99,7 +99,19 @@
         "support.function",
       ],
       "settings": {
-        "foreground": "#d4928c"
+        "foreground": "#d4928c" /* Light */
+        // "foreground": "#ec9393" /* Good? */
+        // "foreground": "#e69999"
+        // "foreground": "#E66258"
+      }
+    },
+    {
+      "scope": [
+        // return, import, if/else
+        "keyword.control"
+      ],
+      "settings": {
+        "foreground": "#9b61d1" /* Light */
       }
     },
     {
@@ -119,8 +131,7 @@
         "entity.other.attribute-name"
       ],
       "settings": {
-        // "foreground": "#258eb1"
-        "foreground": "#2698b5"
+        "foreground": "#1195b6"
       }
     },
     {
@@ -141,9 +152,18 @@
       }
     },
     {
-      "scope": [],
+      "scope": [
+        // Numbers / Digits
+        "constant.numeric",
+        "keyword.other.unit",
+        // Minuse/Plus with Numbers/Digits
+        "keyword.operator.arithmetic",
+        // true/false
+        "constant.language"
+      ],
       "settings": {
         // "foreground": "#a21319"
+        "foreground": "#bf4095"
       }
     },
     {
@@ -159,9 +179,22 @@
       }
     },
     {
-      "scope": [],
+      "scope": [
+        // All types???
+        // "entity.name.type",
+        // primitives
+        "support.type",
+        // Return type:
+        "meta.return.type entity.name.type",
+        "meta.type.annotation entity.name.type",
+        "meta.type.parameters entity.name.type",
+        // Enum as a type definition
+        // "meta.type.annotation entity.name.type.enum",
+        // TS: Interface declaration
+        "entity.name.type.interface"
+      ],
       "settings": {
-        "fontStyle": "bold"
+        "foreground": "#9e9315"
       }
     },
     {
@@ -187,10 +220,10 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     // TS: interface type
-    // "interface": "#92870c",
+    "interface": "#9e9315",
     // TS: generic parameters
-    // "typeParameter": "#92870c",
-    // Function parameters
-    // "parameter.declaration": "#e36209"
+    "typeParameter": "#9e9315",
+    // Parameters
+    "parameter.declaration": "#b56d08"
   }
 }

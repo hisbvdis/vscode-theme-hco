@@ -74,8 +74,12 @@
         "meta.property-name support.type",
         // HTML angel brackets
         "punctuation.definition.tag",
-        // C#: variables inside strings
-        "meta.expression"
+        // C#: variables inside strings (??? check)
+        // "meta.expression",
+        // C# (Razor): Variables inside a string
+        "variable",
+        // #C (Razor): Parenthesis inside a string: (){}
+        "punctuation.cs",
       ],
       "settings": {
         "foreground": "#0C0A09"
@@ -244,7 +248,7 @@
     // TS: generic parameters
     "typeParameter": "#9e9315",
     // TS: Date, Math
-    "class.defaultLibrary": "#2595b1",
+    // "class.defaultLibrary": "#2595b1",
     "class.declaration": "#2595b1",
     // Parameters
     "parameter.declaration": "#b56d08"
