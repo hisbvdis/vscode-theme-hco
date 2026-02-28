@@ -1,7 +1,7 @@
 {
   "$schema": "vscode://schemas/color-theme",
   "name": "Default Light Modern",
-  "include": "./light_vs.json",
+  "include": "./light_plus.json",
   "colors": {
     "activityBar.activeBorder": "#005FB8",
     "activityBar.background": "#F8F8F8",

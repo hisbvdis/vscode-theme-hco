@@ -50,7 +50,7 @@
     "editorBracketPairGuide.activeBackground1": "#0C0A09",
     "editorBracketPairGuide.activeBackground2": "#0C0A09",
     "editorBracketPairGuide.activeBackground3": "#0C0A09",
-    "editorBracketPairGuide.activeBackground4": "#0C0A09",
+    "editorBracketPairGuide.activeBackground4": "#0C0A09"
   },
   "tokenColors": [
     {
@@ -72,20 +72,18 @@
         "constant.other.option",
         // CSS property name
         "meta.property-name support.type",
-        // BAD: replaces "function" highlighting
-        // "variable.other",
         // HTML angel brackets
         "punctuation.definition.tag",
-        // C#: variables inside strings
+        // C# (Razor): Variables inside a string
         "variable",
-        // Object: property key as a string
-        // No! Any strings in property key get black
-        // "meta.object-literal.key string",
-        // Type "object": property key as a string
-        // No! String is black in the Generic type argument
-        // "meta.field.declaration  string",
-        // TS: Enums
-        // "entity.name.type.enum",
+        // TS: Override ENUM color
+        "entity.name.type.enum",
+        // TS: Namespaces (imported modules)
+        "entity.name.type.module",
+        // TS: Class declaration
+        "entity.name.type.class",
+        // TS: Class inheritance
+        "entity.other.inherited-class",
       ],
       "settings": {
         "foreground": "#0C0A09"
@@ -107,11 +105,10 @@
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
         // Classes: this, super()
-        "variable.language",
+        "variable.language"
       ],
       "settings": {
-        // "foreground": "#0000d6" /* Light */
-        "foreground": "#0000db"
+        "foreground": "#0000e0" /* Light */
       }
     },
     {
@@ -120,22 +117,16 @@
         "entity.name.function",
         // CSS func
         "support.function",
-        // new Promise()
-        // "meta.function-call support.class",
-        // Classes: override "entity.name.type"
-        // "entity.name.type.class",
-        // 
-        "entity.other.inherited-class",
       ],
       "settings": {
-        // "foreground": "#379cbe" /* Origin - Backup */
-        "foreground": "#1195b6" /* Light */
+        // "foreground": "#1195b6" /* Light */
+        "foreground": "#1590b2"
       }
     },
     {
       "scope": [
         // return, import, if/else
-        "keyword.control",
+        "keyword.control"
       ],
       "settings": {
         "foreground": "#9b61d1" /* Light */
@@ -146,7 +137,9 @@
         // HTML tags
         "entity.name.tag",
         // JSX tags
-        "support.class.component"
+        "support.class.component",
+        // TS: Operators
+        "keyword.operator",
       ],
       "settings": {
         "foreground": "#b30000" /* Light */
@@ -177,8 +170,10 @@
         // Numbers / Digits
         "constant.numeric",
         "keyword.other.unit",
+        // Minuse/Plus with Numbers/Digits
+        "keyword.operator.arithmetic",
         // true/false
-        "constant.language",
+        "constant.language"
       ],
       "settings": {
         "foreground": "#0451a5"
@@ -199,29 +194,34 @@
     },
     {
       "scope": [
-        // All types???
-        // "entity.name.type",
-        // primitives
-        "support.type",
-        // Return type:
-        "meta.return.type entity.name.type",
-        "meta.type.annotation entity.name.type",
-        "meta.type.parameters entity.name.type",
-        // Enum as a type definition
-        // "meta.type.annotation entity.name.type.enum",
+        
       ],
       "settings": {
-        "foreground": "#9e9315"
+        "foreground": "#b56d08"
       }
     },
     {
       "scope": [
-        // const, let, function
-        // "storage",
-        // HTML tags
-        // "entity.name.tag",
-        // JSX tags
-        // "support.class.component",
+        // TS: All "Types" and "Classes"
+        "entity.name.type",
+        // TS: Type — Primitives
+        "support.type"
+        // Go: Types
+        // "storage.type",
+        // TS: Type — Return
+        // "meta.return.type entity.name.type",
+        // "meta.type.annotation entity.name.type",
+        // "meta.type.parameters entity.name.type",
+        // TS: Type — Interface declaration
+        // "entity.name.type.interface",
+      ],
+      "settings": {
+        // "foreground": "#9e9315" /* Light */
+        "foreground": "#958a13"
+      }
+    },
+    {
+      "scope": [
         // Markdown: Heading
         "markup.heading",
         // Markdown: Bold
@@ -248,13 +248,12 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     // TS: interface type
-    "interface": "#9e9315",
+    // "interface": "#9e9315",
     // TS: generic parameters
-    "typeParameter": "#9e9315",
-    // TS: Date, Math
-    "class.defaultLibrary": "#2595b1",
-    "class.declaration": "#2595b1",
+    // "typeParameter": "#9e9315",
+    // ???
+    // "class.declaration": "#2595b1",
     // Parameters
-    "parameter.declaration": "#b56d08",
+    "parameter.declaration": "#b56d08"
   }
 }

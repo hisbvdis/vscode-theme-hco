@@ -8,17 +8,17 @@
     // BACKGROUND
     // ======================================================
     // Editor background
-    "editor.background": "#f2f2f2",
+    "editor.background": "#f7f7f7",
     // Sidebar background
-    "sideBar.background": "#f2f2f2",
+    "sideBar.background": "#f7f7f7",
     // Tabs background
-    "tab.activeBackground": "#f2f2f2",
+    "tab.activeBackground": "#f7f7f7",
     // Terminal background
-    "panel.background": "#f2f2f2",
+    "panel.background": "#f7f7f7",
     // ======================================================
     // FOREGROUND
     // ======================================================
-    "editor.foreground": "#0C0A09",
+    "editor.foreground": "#090707",
     // ======================================================
     // TABS
     // ======================================================
@@ -42,15 +42,15 @@
     // BRACKETS AND BRACKET GUIDES
     // ======================================================
     // HTML scope ruler
-    "editorIndentGuide.activeBackground1": "#0C0A09",
-    "editorBracketHighlight.foreground1": "#0C0A09",
-    "editorBracketHighlight.foreground2": "#0C0A09",
-    "editorBracketHighlight.foreground3": "#0C0A09",
-    "editorBracketHighlight.foreground4": "#0C0A09",
-    "editorBracketPairGuide.activeBackground1": "#0C0A09",
-    "editorBracketPairGuide.activeBackground2": "#0C0A09",
-    "editorBracketPairGuide.activeBackground3": "#0C0A09",
-    "editorBracketPairGuide.activeBackground4": "#0C0A09"
+    "editorIndentGuide.activeBackground1": "#090707",
+    "editorBracketHighlight.foreground1": "#090707",
+    "editorBracketHighlight.foreground2": "#090707",
+    "editorBracketHighlight.foreground3": "#090707",
+    "editorBracketHighlight.foreground4": "#090707",
+    "editorBracketPairGuide.activeBackground1": "#090707",
+    "editorBracketPairGuide.activeBackground2": "#090707",
+    "editorBracketPairGuide.activeBackground3": "#090707",
+    "editorBracketPairGuide.activeBackground4": "#090707"
   },
   "tokenColors": [
     {
@@ -66,23 +66,29 @@
       "scope": [
         // JSON property key
         "support.type.property-name.json",
+        // CSS property name and media conditions
+        "support.type.property-name",
         // Variables inside the template string
         "meta.embedded",
         // Markdown: commands flags
         "constant.other.option",
-        // CSS property name
-        "meta.property-name support.type",
         // HTML angel brackets
         "punctuation.definition.tag",
-        // C#: variables inside strings (??? check)
-        // "meta.expression",
-        // C# (Razor): Variables inside a string
-        "variable",
-        // #C (Razor): Parenthesis inside a string: (){}
-        "punctuation.cs",
+        // (BAD!!!!!! Overrides TS parameters) C# (Razor): Variables inside a string
+        // "<add_something_here> variable",
+        "entity.name.type.module",
+        // BAD: Enums are used as type in C#
+        // TS: Override color for ENUMs
+        // "entity.name.type.enum",
+        // TS: Override color for Namespaces
+        "entity.name.type.namespace",
+        // C#: Override color for "Struct"
+        "entity.name.type.struct",
+        // C#: Variables inside string
+        "variable.other.object.property",
       ],
       "settings": {
-        "foreground": "#0C0A09"
+        "foreground": "#090707"
       }
     },
     {
@@ -101,11 +107,51 @@
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
         // Classes: this, super()
-        "variable.language"
+        "variable.language",
+        // ==== OPERATORS ====
+        // Operators = ! ?
+        "keyword.operator",
+        // Arrow functions symbol
+        "storage.type.function.arrow",
+        // TS: Object's key/value colon
+        "punctuation.separator.key-value",
+        // ==== /OPERATORS ====
       ],
       "settings": {
-        "foreground": "#0000e0" /* Light */
+        // "foreground": "#0013e0" /* Light */
+        "foreground": "#000be0"
       }
+    },
+    {
+      "scope": [
+        // Minuse/Plus with Numbers/Digits
+        "keyword.operator.arithmetic",
+        // true/false
+        "constant.language",
+        // Numbers
+        "constant.numeric",
+        // Number's following unit
+        "keyword.other.unit",
+        // CSS: Property value
+        "support.constant.property-value",
+      ],
+      "settings": {
+        "foreground": "#0451a5"
+      }
+    },
+    {
+      "scope": [
+        // ==== CLASSES ONLY ====
+        // TS: Class declaration
+        "entity.name.type.class",
+        // TS: Inherited class
+        "entity.other.inherited-class",
+        // TS: Promise
+        "support.class",
+      ],
+      "settings": {
+        "foreground": "#506795",
+      },
     },
     {
       "scope": [
@@ -113,15 +159,9 @@
         "entity.name.function",
         // CSS func
         "support.function",
-        // new Promise()
-        // "meta.function-call support.class",
-        // Classes: override "entity.name.type"
-        // "entity.name.type.class",
-        "entity.other.inherited-class"
       ],
       "settings": {
-        // "foreground": "#379cbe" /* Origin - Backup */
-        "foreground": "#1195b6" /* Light */
+        "foreground": "#148fb8" /* Light */
       }
     },
     {
@@ -138,10 +178,11 @@
         // HTML tags
         "entity.name.tag",
         // JSX tags
-        "support.class.component"
+        "support.class.component",
       ],
       "settings": {
-        "foreground": "#b30000" /* Light */
+        // "foreground": "#b30000" /* Light */
+        "foreground": "#ad0000"
       }
     },
     {
@@ -166,20 +207,6 @@
     },
     {
       "scope": [
-        // Numbers / Digits
-        "constant.numeric",
-        "keyword.other.unit",
-        // Minuse/Plus with Numbers/Digits
-        "keyword.operator.arithmetic",
-        // true/false
-        "constant.language"
-      ],
-      "settings": {
-        "foreground": "#0451a5"
-      }
-    },
-    {
-      "scope": [
         // Markdown: Heading
         "markup.heading",
         // Markdown: Code inside heading
@@ -193,31 +220,43 @@
     },
     {
       "scope": [
-        // All types???
-        // "entity.name.type",
-        // primitives
-        "support.type",
-        // Return type:
-        "meta.return.type entity.name.type",
-        "meta.type.annotation entity.name.type",
-        "meta.type.parameters entity.name.type",
-        // Enum as a type definition
-        // "meta.type.annotation entity.name.type.enum",
-        // TS: Interface declaration
-        "entity.name.type.interface"
+        // TS: Function parameters
+        "meta.parameters variable.parameter",
+        // TS: Parameters of arrow functions
+        "meta.arrow variable.parameter",
       ],
       "settings": {
-        "foreground": "#9e9315"
+        "foreground": "#ad661f"
       }
     },
     {
       "scope": [
-        // const, let, function
-        // "storage",
-        // HTML tags
-        // "entity.name.tag",
-        // JSX tags
-        // "support.class.component",
+        // TS: Type primitives
+        "support.type",
+        // TS: All "Types" and "Classes"
+        "entity.name.type",
+        // TS: Extended interface
+        "meta.interface entity.other.inherited-class",
+        // TS: Returned type
+        // "meta.return.type entity.name.type",
+        // TS: Assigning type
+        // "meta.type.annotation entity.name.type",
+        // TS: Declarating type
+        // "meta.type.declaration entity.name.type",
+        // TS: Declaring interface
+        // "entity.name.type.interface",
+        // TS: Extending interface
+        // "meta.interface entity.other.inherited-class",
+        // C#: Type keywords (not sure)
+        // "keyword.type",
+      ],
+      "settings": {
+        // "foreground": "#a09522"
+        "foreground": "#9c9121"
+      }
+    },
+    {
+      "scope": [
         // Markdown: Heading
         "markup.heading",
         // Markdown: Bold
@@ -243,14 +282,13 @@
   ],
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    // TS: interface type
-    "interface": "#9e9315",
-    // TS: generic parameters
-    "typeParameter": "#9e9315",
-    // TS: Date, Math
-    // "class.defaultLibrary": "#2595b1",
-    "class.declaration": "#2595b1",
+    // C#: Namespaces
+    "namespace": "#090707"
+    // TS: Class declaration
+    // "class.declaration": "#9A94D1",
+    // TS: Class call (create new instance)
+    // "class.documentation": "#9A94D1",
     // Parameters
-    "parameter.declaration": "#b56d08"
+    // "parameter.declaration": "#a56a18",
   }
 }

@@ -2,20 +2,23 @@
   "$schema": "vscode://schemas/color-theme",
   "type": "light",
   "name": "HCO-light-saturated",
+  "include": "./default/light_modern.json",
   "colors": {
     // ======================================================
     // BACKGROUND
     // ======================================================
-    // Editor
+    // Editor background
     "editor.background": "#f2f2f2",
-    // Sidebar
+    // Sidebar background
     "sideBar.background": "#f2f2f2",
-    // Tabs
+    // Tabs background
     "tab.activeBackground": "#f2f2f2",
+    // Terminal background
+    "panel.background": "#f2f2f2",
     // ======================================================
     // FOREGROUND
     // ======================================================
-    "editor.foreground": "#1f2328",
+    "editor.foreground": "#0C0A09",
     // ======================================================
     // TABS
     // ======================================================
@@ -23,60 +26,39 @@
     "tab.inactiveBackground": "#d9d9d9",
     // Tabs bar background
     "editorGroupHeader.tabsBackground": "#cfcfcf",
+    // Inactive tab's text
+    "tab.inactiveForeground": "#333333b3",
     // ======================================================
-    // SIDEBAR
+    // BORDERS
     // ======================================================
-    // Active tab
     "sideBar.border": "#C7C7C7",
+    "panel.border": "#C7C7C7",
+    // ======================================================
+    // SELECTION
+    // ======================================================
+    "editor.selectionBackground": "#a8d4ff",
+    "editor.selectionHighlightBackground": "#a8d4ff70",
     // ======================================================
     // BRACKETS AND BRACKET GUIDES
     // ======================================================
-    "editorBracketHighlight.foreground1": "#1f2328",
-    "editorBracketHighlight.foreground2": "#1f2328",
-    "editorBracketHighlight.foreground3": "#1f2328",
-    "editorBracketHighlight.foreground4": "#1f2328",
-    "editorBracketPairGuide.activeBackground1": "#000000",
-    "editorBracketPairGuide.activeBackground2": "#000000",
-    "editorBracketPairGuide.activeBackground3": "#000000",
-    "editorBracketPairGuide.activeBackground4": "#000000"
+    // HTML scope ruler
+    "editorIndentGuide.activeBackground1": "#0C0A09",
+    "editorBracketHighlight.foreground1": "#0C0A09",
+    "editorBracketHighlight.foreground2": "#0C0A09",
+    "editorBracketHighlight.foreground3": "#0C0A09",
+    "editorBracketHighlight.foreground4": "#0C0A09",
+    "editorBracketPairGuide.activeBackground1": "#0C0A09",
+    "editorBracketPairGuide.activeBackground2": "#0C0A09",
+    "editorBracketPairGuide.activeBackground3": "#0C0A09",
+    "editorBracketPairGuide.activeBackground4": "#0C0A09"
   },
   "tokenColors": [
     {
       "scope": [
-        // Comments
         "comment"
       ],
       "settings": {
         "foreground": "#9e9e9e"
-      }
-    },
-    {
-      "scope": [
-        // JSON property key
-        "support.type.property-name.json",
-        // Variables inside the template string
-        "meta.embedded",
-        // Markdown: commands flags
-        "constant.other.option",
-        // CSS property name
-        "meta.property-name support.type",
-        // BAD: replaces "function" highlighting
-        // "variable.other",
-        // HTML angel brackets
-        "punctuation.definition.tag",
-        // C#: variables inside strings
-        "variable",
-        // Object: property key as a string
-        // No! Any strings in property key get black
-        // "meta.object-literal.key string",
-        // Type "object": property key as a string
-        // No! String is black in the Generic type argument
-        // "meta.field.declaration  string",
-        // TS: Enums
-        // "entity.name.type.enum",
-      ],
-      "settings": {
-        "foreground": "#1f2328"
       }
     },
     {
@@ -87,143 +69,12 @@
         "keyword",
       ],
       "settings": {
-        // "foreground": "#d10034"
-        "foreground": "#cc0033"
+        "foreground": "#CF222E"
       }
     },
-    {
-      "scope": [
-        // User function name
-        "entity.name.function",
-        // CSS func
-        "support.function",
-      ],
-      "settings": {
-        "foreground": "#d4928c" /* Light */
-        // "foreground": "#ec9393" /* Good? */
-        // "foreground": "#e69999"
-        // "foreground": "#E66258"
-      }
-    },
-    {
-      "scope": [
-        // return, import, if/else
-        "keyword.control"
-      ],
-      "settings": {
-        "foreground": "#9b61d1" /* Light */
-      }
-    },
-    {
-      "scope": [
-        // HTML tags
-        "entity.name.tag",
-        // JSX tags
-        "support.class.component"
-      ],
-      "settings": {
-        "foreground": "#0000c7"
-      }
-    },
-    {
-      "scope": [
-        // Attributes
-        "entity.other.attribute-name"
-      ],
-      "settings": {
-        "foreground": "#1195b6"
-      }
-    },
-    {
-      "scope": [
-        // Strings
-        "string",
-        // Markdown: Code in backticks
-        "markup.inline.raw"
-      ],
-      "settings": {
-        "foreground": "#3d922a"
-      }
-    },
-    {
-      "scope": [],
-      "settings": {
-        // "foreground": "#0451a5"
-      }
-    },
-    {
-      "scope": [
-        // Numbers / Digits
-        "constant.numeric",
-        "keyword.other.unit",
-        // Minuse/Plus with Numbers/Digits
-        "keyword.operator.arithmetic",
-        // true/false
-        "constant.language"
-      ],
-      "settings": {
-        // "foreground": "#a21319"
-        "foreground": "#bf4095"
-      }
-    },
-    {
-      "scope": [],
-      "settings": {
-        // "foreground": "#b55908"
-      }
-    },
-    {
-      "scope": [],
-      "settings": {
-        // "foreground": "#92870c"
-      }
-    },
-    {
-      "scope": [
-        // All types???
-        // "entity.name.type",
-        // primitives
-        "support.type",
-        // Return type:
-        "meta.return.type entity.name.type",
-        "meta.type.annotation entity.name.type",
-        "meta.type.parameters entity.name.type",
-        // Enum as a type definition
-        // "meta.type.annotation entity.name.type.enum",
-        // TS: Interface declaration
-        "entity.name.type.interface"
-      ],
-      "settings": {
-        "foreground": "#9e9315"
-      }
-    },
-    {
-      "scope": [
-        // return, import, if/else
-        "keyword.control",
-        // Comments
-        "comment",
-        // Markdown: italic formatting
-        "markup.italic"
-      ],
-      "settings": {
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "scope": [],
-      "settings": {
-        "fontStyle": ""
-      }
-    }
   ],
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    // TS: interface type
-    "interface": "#9e9315",
-    // TS: generic parameters
-    "typeParameter": "#9e9315",
-    // Parameters
-    "parameter.declaration": "#b56d08"
+    
   }
 }
