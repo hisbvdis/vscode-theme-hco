@@ -2,93 +2,98 @@
   "$schema": "vscode://schemas/color-theme",
   "type": "light",
   "name": "HCO-light-saturated",
-  "include": "./default/light_modern.json",
+  "include": "./default/2026-light.json",
   "colors": {
     // ======================================================
     // BACKGROUND
     // ======================================================
-    // Editor background
-    "editor.background": "#f7f7f7",
-    // Sidebar background
-    "sideBar.background": "#f7f7f7",
-    // Tabs background
-    "tab.activeBackground": "#f7f7f7",
-    // Terminal background
-    "panel.background": "#f7f7f7",
+    // Editor
+    "editor.background": "#FAFAFA",
+    // Line numbers panel (on the left)
+    "editorGutter.background": "#FAFAFA",
+    // Breadcrumbrs
+    "breadcrumb.background": "#FAFAFA",
+    // Tabs panel
+    "editorGroupHeader.tabsBackground": "#EBEBEC",
+    // Tabs panel (inactive tabs)
+    "tab.inactiveBackground": "#EBEBEC",
     // ======================================================
     // FOREGROUND
     // ======================================================
-    "editor.foreground": "#090707",
-    // ======================================================
-    // TABS
-    // ======================================================
-    // Inactive tab
-    "tab.inactiveBackground": "#d9d9d9",
-    // Tabs bar background
-    "editorGroupHeader.tabsBackground": "#cfcfcf",
-    // Inactive tab's text
-    "tab.inactiveForeground": "#333333b3",
+    "editor.foreground": "#1F2328",
     // ======================================================
     // BORDERS
     // ======================================================
-    "sideBar.border": "#C7C7C7",
-    "panel.border": "#C7C7C7",
+    // Side panels: Border
+    "sideBar.border": "#D7D7D7",
+    // Terminal: Border
+    "panel.border": "#D7D7D7",
+    // Tabs panel: Side borders of tabs
+    "tab.border": "#D7D7D7",
+    // Tabs panel: Top border of active tab
+    "tab.activeBorderTop": "#D7D7D7",
+    // Tabs panel: Bottom border
+    "editorGroupHeader.tabsBorder": "#D7D7D7",
+    // Title bar: Bottom border (Top border of tabs panel)
+    "titleBar.border": "#D7D7D7",
     // ======================================================
     // SELECTION
     // ======================================================
-    "editor.selectionBackground": "#a8d4ff",
-    "editor.selectionHighlightBackground": "#a8d4ff70",
+    // "editor.selectionBackground": "#a8d4ff",
+    // "editor.selectionHighlightBackground": "#a8d4ff70",
     // ======================================================
     // BRACKETS AND BRACKET GUIDES
     // ======================================================
     // HTML scope ruler
-    "editorIndentGuide.activeBackground1": "#090707",
-    "editorBracketHighlight.foreground1": "#090707",
-    "editorBracketHighlight.foreground2": "#090707",
-    "editorBracketHighlight.foreground3": "#090707",
-    "editorBracketHighlight.foreground4": "#090707",
-    "editorBracketPairGuide.activeBackground1": "#090707",
-    "editorBracketPairGuide.activeBackground2": "#090707",
-    "editorBracketPairGuide.activeBackground3": "#090707",
-    "editorBracketPairGuide.activeBackground4": "#090707"
+    "editorIndentGuide.activeBackground1": "#1F2328",
+    "editorBracketHighlight.foreground1": "#1F2328",
+    "editorBracketHighlight.foreground2": "#1F2328",
+    "editorBracketHighlight.foreground3": "#1F2328",
+    "editorBracketHighlight.foreground4": "#1F2328",
+    "editorBracketPairGuide.activeBackground1": "#1F2328",
+    "editorBracketPairGuide.activeBackground2": "#1F2328",
+    "editorBracketPairGuide.activeBackground3": "#1F2328",
+    "editorBracketPairGuide.activeBackground4": "#1F2328"
   },
   "tokenColors": [
     {
       "scope": [
         // Comments
-        "comment"
+        "comment",
+        // RegExp: Start/End of regexp expression /.../
+        "string.regexp punctuation.definition.string",
+        // RegExp: Escape backlashes
+        "constant.character.escape"
       ],
       "settings": {
-        "foreground": "#9e9e9e"
+        "foreground": "#9e9e9e" /* Light */
       }
     },
     {
       "scope": [
-        // JSON property key
-        "support.type.property-name.json",
-        // CSS property name and media conditions
-        "support.type.property-name",
-        // Variables inside the template string
+        // TS: Variables (inside JSDoce syntax)
+        "variable.other.jsdoc",
+        // TS: Variables (inside template strings)
         "meta.embedded",
+        // JSON: Property key name
+        "support.type.property-name.json",
+        // CSS: Property name and Media conditions
+        "support.type.property-name",
         // Markdown: commands flags
         "constant.other.option",
-        // HTML angel brackets
-        "punctuation.definition.tag",
-        // (BAD!!!!!! Overrides TS parameters) C# (Razor): Variables inside a string
-        // "<add_something_here> variable",
+        // TS: Disable "types" highlighting for "JS-modules"
         "entity.name.type.module",
-        // BAD: Enums are used as type in C#
-        // TS: Override color for ENUMs
-        // "entity.name.type.enum",
-        // TS: Override color for Namespaces
+        // TS: Disable "types" highlighting for "TS-Enums"
+        "entity.name.type.enum",
+        // TS: Disable "types" highlighting for "Namesapeses"
         "entity.name.type.namespace",
-        // C#: Override color for "Struct"
-        "entity.name.type.struct",
-        // C#: Variables inside string
-        "variable.other.object.property",
+        // RegExp: Group parentheses "()"
+        "punctuation.definition.group",
+        // RegExp: Sets square brackets "[]"
+        "punctuation.definition.character-class",
       ],
       "settings": {
-        "foreground": "#090707"
+        "foreground": "#1F2328" /* Light */
       }
     },
     {
@@ -103,65 +108,61 @@
         "keyword.operator.new",
         // typeof
         "keyword.operator.expression",
-        // First and last curly braces of variable inside template string
-        "punctuation.definition.template-expression.begin",
-        "punctuation.definition.template-expression.end",
         // Classes: this, super()
         "variable.language",
-        // ==== OPERATORS ====
-        // Operators = ! ?
+        // Operators and Symbols: = ! ?
         "keyword.operator",
-        // Arrow functions symbol
+        // Operators and Symbols: Arrow function
         "storage.type.function.arrow",
-        // TS: Object's key/value colon
+        // Operators and Symbols: Object's key/value colon
         "punctuation.separator.key-value",
-        // ==== /OPERATORS ====
+        // JS/TS: First and last curly braces of variable inside template string
+        "punctuation.definition.template-expression.begin",
+        "punctuation.definition.template-expression.end"
       ],
       "settings": {
-        // "foreground": "#0013e0" /* Light */
-        "foreground": "#000be0"
+        "foreground": "#000be0" /* Light */
       }
     },
     {
       "scope": [
-        // Minuse/Plus with Numbers/Digits
-        "keyword.operator.arithmetic",
         // true/false
         "constant.language",
         // Numbers
         "constant.numeric",
-        // Number's following unit
+        // Numbers with leading unit
         "keyword.other.unit",
-        // CSS: Property value
-        "support.constant.property-value",
+        // Numbers with plus/minus before (+1)
+        "keyword.operator.arithmetic"
       ],
       "settings": {
-        "foreground": "#0451a5"
+        "foreground": "#0451a5" /* Light */
       }
     },
     {
       "scope": [
-        // ==== CLASSES ONLY ====
+        // ==== CLASSES ====
         // TS: Class declaration
         "entity.name.type.class",
         // TS: Inherited class
         "entity.other.inherited-class",
         // TS: Promise
-        "support.class",
+        "support.class"
       ],
       "settings": {
-        "foreground": "#506795",
-      },
+        "foreground": "#506795" /* Light */
+      }
     },
     {
       "scope": [
         // User function name
         "entity.name.function",
         // CSS func
-        "support.function",
+        "support.function"
       ],
       "settings": {
-        "foreground": "#148fb8" /* Light */
+        // "foreground": "#148fb8" /* Light */
+        "foreground": "#1492b8"
       }
     },
     {
@@ -178,11 +179,10 @@
         // HTML tags
         "entity.name.tag",
         // JSX tags
-        "support.class.component",
+        "support.class.component"
       ],
       "settings": {
-        // "foreground": "#b30000" /* Light */
-        "foreground": "#ad0000"
+        "foreground": "#a80000" /* Light */
       }
     },
     {
@@ -211,22 +211,27 @@
         "markup.heading",
         // Markdown: Code inside heading
         "markup.heading markup.inline.raw",
+        // Markdown: String inside heading
+        "markup.heading string",
         // HTML: Escape sequence (&nbsp;)
         "constant.character"
       ],
       "settings": {
-        "foreground": "#a21319"
+        "foreground": "#a21319" /* Light */
       }
     },
     {
       "scope": [
-        // TS: Function parameters
+        // TS: Parameters (of function declarations)
         "meta.parameters variable.parameter",
-        // TS: Parameters of arrow functions
+        // TS: Parameters (of arrow functions)
         "meta.arrow variable.parameter",
+        // TS: Parameters (of arrow functions; written from the new line)
+        "meta.var variable.parameter"
       ],
       "settings": {
-        "foreground": "#ad661f"
+        // "foreground": "#ad661f" /* Light */
+        "foreground": "#a36629" /* Light */
       }
     },
     {
@@ -236,23 +241,10 @@
         // TS: All "Types" and "Classes"
         "entity.name.type",
         // TS: Extended interface
-        "meta.interface entity.other.inherited-class",
-        // TS: Returned type
-        // "meta.return.type entity.name.type",
-        // TS: Assigning type
-        // "meta.type.annotation entity.name.type",
-        // TS: Declarating type
-        // "meta.type.declaration entity.name.type",
-        // TS: Declaring interface
-        // "entity.name.type.interface",
-        // TS: Extending interface
-        // "meta.interface entity.other.inherited-class",
-        // C#: Type keywords (not sure)
-        // "keyword.type",
+        "meta.interface entity.other.inherited-class"
       ],
       "settings": {
-        // "foreground": "#a09522"
-        "foreground": "#9c9121"
+        "foreground": "#9c9121" /* Light */
       }
     },
     {
@@ -281,14 +273,5 @@
     }
   ],
   "semanticHighlighting": true,
-  "semanticTokenColors": {
-    // C#: Namespaces
-    "namespace": "#090707"
-    // TS: Class declaration
-    // "class.declaration": "#9A94D1",
-    // TS: Class call (create new instance)
-    // "class.documentation": "#9A94D1",
-    // Parameters
-    // "parameter.declaration": "#a56a18",
-  }
+  "semanticTokenColors": {}
 }
