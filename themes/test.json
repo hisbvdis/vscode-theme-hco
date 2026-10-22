@@ -37,11 +37,6 @@
     // Title bar: Bottom border (Top border of tabs panel)
     "titleBar.border": "#D7D7D7",
     // ======================================================
-    // SELECTION
-    // ======================================================
-    // "editor.selectionBackground": "#a8d4ff",
-    // "editor.selectionHighlightBackground": "#a8d4ff70",
-    // ======================================================
     // BRACKETS AND BRACKET GUIDES
     // ======================================================
     // HTML scope ruler
@@ -61,12 +56,10 @@
         // Comments
         "comment",
         // RegExp: Start/End of regexp expression /.../
-        "string.regexp punctuation.definition.string",
-        // RegExp: Escape backlashes
-        "constant.character.escape"
+        "string.regexp punctuation.definition.string"
       ],
       "settings": {
-        "foreground": "#9e9e9e" /* Light */
+        "foreground": "#A0A1A7" /* Light */
       }
     },
     {
@@ -83,6 +76,8 @@
         "constant.other.option",
         // TS: Disable "types" highlighting for "JS-modules"
         "entity.name.type.module",
+        // JS: Disable "types" highlighting "module.exports"
+        "support.type.object",
         // TS: Disable "types" highlighting for "TS-Enums"
         "entity.name.type.enum",
         // TS: Disable "types" highlighting for "Namesapeses"
@@ -90,7 +85,7 @@
         // RegExp: Group parentheses "()"
         "punctuation.definition.group",
         // RegExp: Sets square brackets "[]"
-        "punctuation.definition.character-class",
+        "punctuation.definition.character-class"
       ],
       "settings": {
         "foreground": "#1F2328" /* Light */
@@ -110,8 +105,6 @@
         "keyword.operator.expression",
         // Classes: this, super()
         "variable.language",
-        // Operators and Symbols: = ! ?
-        "keyword.operator",
         // Operators and Symbols: Arrow function
         "storage.type.function.arrow",
         // Operators and Symbols: Object's key/value colon
@@ -126,14 +119,13 @@
     },
     {
       "scope": [
+        // ==== NUMBERS and BOOLEAN ====
         // true/false
         "constant.language",
         // Numbers
         "constant.numeric",
         // Numbers with leading unit
-        "keyword.other.unit",
-        // Numbers with plus/minus before (+1)
-        "keyword.operator.arithmetic"
+        "keyword.other.unit"
       ],
       "settings": {
         "foreground": "#0451a5" /* Light */
@@ -161,8 +153,7 @@
         "support.function"
       ],
       "settings": {
-        // "foreground": "#148fb8" /* Light */
-        "foreground": "#1492b8"
+        "foreground": "#148fb8" /* Light */
       }
     },
     {
@@ -183,6 +174,15 @@
       ],
       "settings": {
         "foreground": "#a80000" /* Light */
+      }
+    },
+    {
+      "scope": [
+        // Operators and Symbols: = ! ?
+        "keyword.operator"
+      ],
+      "settings": {
+        "foreground": "#CB5C69" /* Light */
       }
     },
     {
@@ -230,8 +230,7 @@
         "meta.var variable.parameter"
       ],
       "settings": {
-        // "foreground": "#ad661f" /* Light */
-        "foreground": "#996633" /* Light */
+        "foreground": "#a36629" /* Light */
       }
     },
     {
