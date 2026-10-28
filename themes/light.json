@@ -72,6 +72,8 @@
         "support.type.property-name.json",
         // CSS: Property name and Media conditions
         "support.type.property-name",
+        // CSS: Vendors' property names
+        "support.type.vendored.property-name.css",
         // Markdown: commands flags
         "constant.other.option",
         // TS: Disable "types" highlighting for "JS-modules"
