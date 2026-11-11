@@ -8,11 +8,12 @@
     // BACKGROUND
     // ======================================================
     // Editor
-    "editor.background": "#FAFAFA",
+    // "editor.background": "#FAFAFA",
+    "editor.background": "#FAFAFD",
     // Line numbers panel (on the left)
-    "editorGutter.background": "#FAFAFA",
+    "editorGutter.background": "#FAFAFD",
     // Breadcrumbrs
-    "breadcrumb.background": "#FAFAFA",
+    "breadcrumb.background": "#FAFAFD",
     // Tabs panel
     "editorGroupHeader.tabsBackground": "#EBEBEC",
     // Tabs panel (inactive tabs)
@@ -26,16 +27,12 @@
     // ======================================================
     // Side panels: Border
     "sideBar.border": "#D7D7D7",
-    // Terminal: Border
+    // Terminal: Border between terminal list and terminal area
     "panel.border": "#D7D7D7",
-    // Tabs panel: Side borders of tabs
+    // Tabs panel: Intermediate border between tabs
     "tab.border": "#D7D7D7",
-    // Tabs panel: Top border of active tab
-    "tab.activeBorderTop": "#D7D7D7",
-    // Tabs panel: Bottom border
+    // Tabs panel: Bottom border between tabs panel and breadcrumb/editor
     "editorGroupHeader.tabsBorder": "#D7D7D7",
-    // Title bar: Bottom border (Top border of tabs panel)
-    "titleBar.border": "#D7D7D7",
     // ======================================================
     // BRACKETS AND BRACKET GUIDES
     // ======================================================
